@@ -2,7 +2,7 @@
 /*------------- #VARIABLES --------------*/
 /*------------- #HEADER --------------*/
 .header {
-  height: 70px;
+  height: 50px;
   background-color: #3f4257;
   padding-right: 70px;
   position: fixed;
@@ -11,7 +11,7 @@
   right: 0;
   z-index: 21; }
   .header .page-title {
-    padding: 25px 50px 26px 100px;
+    padding: 15px 50px 26px 100px;
     text-transform: uppercase;
     float: left;
     height: 100%;
@@ -25,7 +25,7 @@
 
 .header-spacer {
   display: block;
-  height: 100px; }
+  height: 70px; }
 
   .blogg-header-spacer {
   display: block;
@@ -44,16 +44,16 @@
 .search-bar {
   float: left;
   width: 500px;
-  height: 70px;
+  height: 50px;
   background-color: #494c62;
   position: relative; }
   .search-bar.w-search {
-    width: 500px;
-    min-height: 70px;
+    width: 300px;
+    min-height: 40px;
     background-color: #ffffe6; }
   .search-bar .form-group {
     margin-bottom: 0;
-    height: 70px; }
+    height: 50px; }
   .search-bar .form-control {
     border: none;
     padding: 0; }
@@ -67,7 +67,7 @@
     border: 1px solid #e6ecf5;
     box-shadow: 0 0 34px 0 rgba(63, 66, 87, 0.1); }
   .search-bar .selectize-input {
-    height: 70px; }
+    height: 50px; }
     .search-bar .selectize-input.has-items input {
       background-color: transparent; }
     .search-bar .selectize-input.has-items > * {
@@ -83,7 +83,7 @@
     color: #696d87;
     fill: #696d87;
     background-color: #494c62;
-    width: 70px; }
+    width: 50px; }
     .search-bar .form-group.with-button button svg {
       height: 22px;
       width: 22px; }
