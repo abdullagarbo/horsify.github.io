@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 
-	<title>LHorsify - Logga in</title>
+	<title lang="se">Horsify - Logga in</title>
+	<title lang="ne">Horsify - Login</title>
 
 	<!-- Required meta tags always come first -->
 	<meta charset="utf-8">
@@ -49,30 +50,49 @@ Landing Header -->
 
 <div class="container">
 	<div class="row">
-		<div class="col-xl-12 col-lg-12 col-md-12">
+		<div class="col-xl-8 col-lg-12 col-md-12">
 			<div id="site-header-landing" class="header-landing">
-				<a href="02-ProfilePage.html" class="logo">
+				<a href="#" class="logo">
 					<img src="img/logo.png" alt="Olympus">
 					<h5 class="logo-title">Horsify</h5>
 				</a>
-
-				<ul class="profile-menu">
-					<li>
-						<a href="#">Om oss</a>
-					</li>
-					<li>
-						<a href="#">FAQS</a>
-					</li>
-					<li>
-						<a href="#">Hjälp & Support</a>
-					</li>
-					<li>
-						<a href="#" class="js-expanded-menu">
-							<svg class="olymp-menu-icon"><use xlink:href="icons/icons.svg#olymp-menu-icon"></use></svg>
-							<svg class="olymp-close-icon"><use xlink:href="icons/icons.svg#olymp-close-icon"></use></svg>
-						</a>
-					</li>
-				</ul>
+			</div>
+		</div>
+		<div class="col-xl-1 col-lg-12 col-md-12">
+			<div id="site-header-landing" class="header-landing">
+				<a href="#" class="logo">
+					<h7 class="logo-title"><h7 lang="se">about us</h7><h7 lang="ne">Om oss</h7></h7>
+				</a>
+			</div>
+		</div>
+		<div class="col-xl-1 col-lg-12 col-md-12">
+			<div id="site-header-landing" class="header-landing">
+				<a href="#" class="logo">
+					<h7 class="logo-title">FAQs</h7>
+				</a>
+			</div>
+		</div>
+		<div class="col-xl-1 col-lg-12 col-md-12">
+			<div id="site-header-landing" class="header-landing">
+				<a href="#" class="logo">
+					<h7 class="logo-title"><h7 lang="se">Hjälp</h7><h7 lang="ne">Help</h7></h7>
+				</a>
+			</div>
+		</div>
+		<div class="col-xl-1 col-lg-12 col-md-12">
+			<div id="site-header-landing" class="header-landing">
+				<a href="#" class="logo">
+					<div class="dropdown">
+						<h7 class="dropdown logo-title" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<h7 lang="se">Språk</h7><h7 lang="ne">Language</h7>
+						</h7>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+							<button id="swedish" class="dropdown-item" type="button">Svenska</button>
+							<button id="english" class="dropdown-item" type="button">Engelska</button>
+							<button class="dropdown-item" type="button">Franska</button>
+						</div>
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -86,11 +106,14 @@ Landing Header -->
 	<div class="row display-flex">
 		<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
 			<div class="landing-content">
-				<h1>Välkommen till Horsify nätverk</h1>
-				<p>Vi är det bästa och största häst nätverket över hela världen. Dela med dig
+				<h1 class="title h1"><h1 lang="se">Välkommen till Horsify nätverk</h1><h1 lang="ne">Welcome to Horsify network</h1></h1>	
+
+				<p lang="se">Vi är det bästa och största häst nätverket över hela världen. Dela med dig
 					tankar, skriv blogginlägg, visa dina bilder och video och mycket mer!
 				</p>
-				<a href="#" class="btn btn-md btn-border c-white" onclick="opentab()">Register Now!</a>
+				<p lang="ne">We are the best and largest horse network worldwide. Share
+					thoughts, write blog posts, view your photos and videos and more!
+				</p>
 			</div>
 		</div>
 
@@ -100,12 +123,12 @@ Landing Header -->
 				<ul class="nav nav-tabs" role="tablist">					
 					<li class="nav-item">
 						<a class="nav-link active" data-toggle="tab" href="#profile" role="tab">							
-							<svg class="olymp-login-icon"><use xlink:href="icons/icons.svg#olymp-login-icon"></use></svg>
+							<svg class="olymp-popup-right-arrow"><use xlink:href="icons/icons.svg#olymp-popup-right-arrow"></use></svg>
 						</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" data-toggle="tab" href="#home" role="tab">
-							<svg class="olymp-register-icon"><use xlink:href="icons/icons.svg#olymp-register-icon"></use></svg>	
+							<svg class="olymp-plus-icon"><use xlink:href="icons/icons.svg#olymp-plus-icon"></use></svg>	
 						</a>
 					</li>
 				</ul>
@@ -113,16 +136,16 @@ Landing Header -->
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div class="tab-pane active" id="profile" role="tabpanel" data-mh="log-tab">
-						<div class="title h6">Logga in på ditt konto</div>
+						<div class="title h6"><h6 lang="se">Logga in på ditt konto</h6><h6 lang="ne">Login to your account</h6></div>
 						<form class="content">
 							<div class="row">
 								<div class="col-xl-12 col-lg-12 col-md-12">
 									<div class="form-group label-floating is-empty">
-										<label class="control-label">E-post</label>
+										<label class="control-label"><label lang="se">E-post</label><label lang="ne">Email</label></label>										
 										<input class="form-control" placeholder="" type="email">
 									</div>
 									<div class="form-group label-floating is-empty">
-										<label class="control-label">Lösenord</label>
+										<label class="control-label"><label lang="se">Lösenord</label><label lang="ne">Password</label></label>
 										<input class="form-control" placeholder="" type="password">
 									</div>
 
@@ -131,65 +154,81 @@ Landing Header -->
 										<div class="checkbox">
 											<label>
 												<input name="optionsCheckboxes" type="checkbox">
-												Kom ihåg mig
+												<label lang="se">Kom ihåg mig</label>
+												<label lang="ne">remember me</label>
 											</label>
 										</div>
-										<a href="#" class="forgot">Glömde mitt lösenord</a>
+										<a lang="se" href="#" class="forgot">Glömde mitt lösenord</a>
+										<a lang="ne" href="#" class="forgot">Forgot my password</a>
 									</div>
 
-									<a href="02-ProfilePage.html" class="btn btn-lg btn-primary full-width">Logga in</a>
+									<a lang="se" href="02-ProfilePage.html" class="btn btn-lg btn-primary full-width">Logga in</a>
+									<a lang="ne" href="02-ProfilePage.html" class="btn btn-lg btn-primary full-width">Login</a>
 
-									<div class="or"></div>
+									<div lang="se" class="eller"></div>
+									<div lang="ne" class="or"></div>
 
-									<a href="#" class="btn btn-lg bg-facebook full-width btn-icon-left"><i class="fa fa-facebook" aria-hidden="true"></i>Login with Facebook</a>
+									<a lang="se" href="#" class="btn btn-lg bg-facebook full-width btn-icon-left"><i class="fa fa-facebook" aria-hidden="true"></i>Logga in med Facebook</a>
+									<a lang="ne" href="#" class="btn btn-lg bg-facebook full-width btn-icon-left"><i class="fa fa-facebook" aria-hidden="true"></i>Login with Facebook</a>
 
-									<a href="#" class="btn btn-lg bg-twitter full-width btn-icon-left"><i class="fa fa-twitter" aria-hidden="true"></i>Login with Twitter</a>
+									<a lang="se" href="#" class="btn btn-lg bg-twitter full-width btn-icon-left"><i class="fa fa-twitter" aria-hidden="true"></i>Logga in med Twitter</a>
+									<a lang="ne" href="#" class="btn btn-lg bg-facebook full-width btn-icon-left"><i class="fa fa-twitter" aria-hidden="true"></i>Login with Twitter</a>
 
 
-									<p>Har du inte ett konto? <a href="#" onclick="opentab()">Registrera Nu!</a> det är väldigt enkelt och du kan börja njuta av alla fördelar!</p>
+									<p lang="se">Har du inte ett konto? <a href="#" onclick="opentab()">Registrera Nu!</a> det är väldigt enkelt och du kan börja njuta av alla fördelar!
+									</p>
+									<p lang="ne">You dont have account? <a href="#" onclick="opentab()">Register Now!</a> It's very simple and you can start enjoying all the benefits!
+									</p>
 								</div>
 							</div>
 						</form>
 					</div>
-										<div class="tab-pane" id="home" role="tabpanel" data-mh="log-tab">
-						<div class="title h6">Registrera</div>
+					<div class="tab-pane" id="home" role="tabpanel" data-mh="log-tab">
+						<div lang="se" class="title h6">Registrera</div>
+						<div lang="ne" class="title h6">Register</div>
 						<form class="content">
 							<div class="row">
 								<div class="col-lg-6 col-md-6">
 									<div class="form-group label-floating is-empty">
-										<label class="control-label">Föernamn</label>
+										<label lang="se" class="control-label">Föernamn</label>
+										<label lang="ne" class="control-label">First name</label>
 										<input class="form-control" placeholder="" type="text">
 									</div>
 								</div>
 								<div class="col-lg-6 col-md-6">
 									<div class="form-group label-floating is-empty">
-										<label class="control-label">Efternamn</label>
+										<label lang="se" class="control-label">Efternamn</label>
+										<label lang="ne" class="control-label">last name</label>
 										<input class="form-control" placeholder="" type="text">
 									</div>
 								</div>
 								<div class="col-xl-12 col-lg-12 col-md-12">
 									<div class="form-group label-floating is-empty">
-										<label class="control-label">E-psot</label>
+										<label lang="se" class="control-label">E-psot</label>
+										<label lang="ne" class="control-label">Email</label>
 										<input class="form-control" placeholder="" type="email">
 									</div>
 									<div class="form-group label-floating is-empty">
-										<label class="control-label">Lösenord</label>
+										<label lang="se" class="control-label">Lösenord</label>
+										<label lang="ne" class="control-label">Password</label>
 										<input class="form-control" placeholder="" type="password">
 									</div>
 									<div class="form-group label-floating is-empty">
-										<label class="control-label">Bekräfta lösenord</label>
+										<label lang="se" class="control-label">Bekräfta lösenord</label>
+										<label lang="ne" class="control-label">Retype password</label>
 										<input class="form-control" placeholder="" type="password">
 									</div>
 
 									<div class="form-group date-time-picker label-floating">
-										<label class="control-label">Födelsedag</label>
+										<label lanf="se" class="control-label">Födelsedag</label>
+										<label lang="ne" class="control-label">Birthday</label>
 										<input name="datetimepicker" value="10/24/1984" />
 										<span class="input-group-addon">
 											<svg class="olymp-calendar-icon"><use xlink:href="icons/icons.svg#olymp-calendar-icon"></use></svg>
 										</span>
 									</div>
 
-									<div class="form-group label-floating is-select">
+									<div lang="se" class="form-group label-floating is-select">
 										<label class="control-label">Kön</label>
 										<select class="selectpicker form-control" size="auto">
 											<option value="MA">Man</option>
@@ -197,16 +236,30 @@ Landing Header -->
 										</select>
 									</div>
 
+									<div lang="ne" class="form-group label-floating is-select">
+										<label class="control-label">Gender</label>
+										<select class="selectpicker form-control" size="auto">
+											<option value="MA">Man</option>
+											<option value="FE">Woman</option>
+										</select>
+									</div>
+
 									<div class="remember">
 										<div class="checkbox">
-											<label>
+											<label lang="se">
 												<input name="optionsCheckboxes" type="checkbox">												
-												Jag godkänner<a href="#">användarvillkoren och sekretesspolicyen</a> of the website
+												Jag godkänner<a href="#">användarvillkoren och sekretesspolicyen</a> av websidan
+											</label>
+
+											<label lang="ne">
+												<input name="optionsCheckboxes" type="checkbox">												
+												I accept<a href="#">Terms of Service and Privacy Policy</a> of the website
 											</label>
 										</div>
 									</div>
 
-									<a href="02-ProfilePage.html" class="btn btn-purple btn-lg full-width">Registrera!</a>
+									<a lang="se" href="02-ProfilePage.html" class="btn btn-purple btn-lg full-width">Registrera!</a>
+									<a lang="ne" href="02-ProfilePage.html" class="btn btn-purple btn-lg full-width">Register!</a>
 								</div>
 							</div>
 						</form>
@@ -221,7 +274,7 @@ Landing Header -->
 
 <script type="text/javascript">
 	function opentab(){
-  	$('[href="#home"]').tab('show');
+		$('[href="#home"]').tab('show');
 	}
 </script>
 
@@ -248,6 +301,27 @@ Landing Header -->
 
 <script src="js/mediaelement-and-player.min.js"></script>
 <script src="js/mediaelement-playlist-plugin.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+<script type="text/javascript">
+	
+	$('[lang="ne"]').hide();
+
+	$("#swedish").click(function() {
+		$('[lang="se"]').show();
+		$('[lang="ne"]').hide();
+	});
+
+	$("#english").click(function() {
+		$('[lang="se"]').hide();
+		$('[lang="ne"]').show();
+	});
+
+</script>
+
+
 
 
 </body>
