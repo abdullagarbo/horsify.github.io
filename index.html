@@ -36,6 +36,19 @@
 	<link rel="stylesheet" type="text/css" href="css/daterangepicker.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-select.css">
 
+	<script type="text/javascript">
+		.caret-up {
+			width: 0; 
+			height: 0; 
+			border-left: 4px solid rgba(0, 0, 0, 0);
+			border-right: 4px solid rgba(0, 0, 0, 0);
+			border-bottom: 4px solid;
+			
+			display: inline-block;
+			margin-left: 2px;
+			vertical-align: middle;
+		}
+	</script>
 
 </head>
 
@@ -123,12 +136,12 @@ Landing Header -->
 				<ul class="nav nav-tabs" role="tablist">					
 					<li class="nav-item">
 						<a class="nav-link active" data-toggle="tab" href="#profile" role="tab">							
-							<svg class="olymp-popup-right-arrow"><use xlink:href="icons/icons.svg#olymp-popup-right-arrow"></use></svg>
+							<svg class="fas fa-sign-in-alt"></svg>
 						</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" data-toggle="tab" href="#home" role="tab">
-							<svg class="olymp-plus-icon"><use xlink:href="icons/icons.svg#olymp-plus-icon"></use></svg>	
+							<svg class="fas fa-plus-square"><use xlink:href="icons/icons.svg#olymp-plus-icon"></use></svg>	
 						</a>
 					</li>
 				</ul>
@@ -301,6 +314,7 @@ Landing Header -->
 
 <script src="js/mediaelement-and-player.min.js"></script>
 <script src="js/mediaelement-playlist-plugin.min.js"></script>
+<script src="fontawesome/svg-with-js/js/fontawesome-all.js"></script>
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 
@@ -321,6 +335,22 @@ Landing Header -->
 
 </script>
 
+
+<script type="text/javascript">
+	$(function(){
+		$(".dropdown").hover(            
+			function() {
+				$('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+				$(this).toggleClass('open');
+				$('b', this).toggleClass("caret caret-up");                
+			},
+			function() {
+				$('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+				$(this).toggleClass('open');
+				$('b', this).toggleClass("caret caret-up");                
+			});
+	});
+</script>
 
 
 
