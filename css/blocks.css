@@ -2748,6 +2748,70 @@ figure {
     bottom: 75px;
     fill: #ff5e3a; }
 
+
+.create-event1 {
+  width: 800px; }
+  .create-event1 .icon-close {
+    margin-top: 0;
+    margin-right: 0; }
+  .create-event1 .more-dropdown {
+    width: 300px;
+    top: 70px;
+    right: -301px;
+    visibility: visible;
+    opacity: 1;
+    padding: 0; }
+    .create-event1 .more-dropdown a {
+      display: inline-block;
+      margin-bottom: 0; }
+    .create-event1 .more-dropdown input {
+      border: 0;
+      border-bottom: 1px solid #e6ecf5;
+      font-size: 12px; }
+    .create-event1 .more-dropdown .form-group {
+      margin-bottom: 0; }
+    .create-event1 .more-dropdown li {
+      padding: 9px 0; }
+    .create-event1 .more-dropdown svg {
+      width: 14px;
+      height: 14px; }
+  .create-event1 .author-thumb {
+    margin-right: 10px; }
+  .create-event1 .icon:hover {
+    fill: #ff5e3a; }
+  .create-event1 .icon.check {
+    fill: #08ddc1; }
+  .create-event1 .olymp-happy-face-icon {
+    width: 20px;
+    height: 20px;
+    fill: #9a9fbf;
+    position: absolute;
+    top: 19px;
+    right: 15px; }
+  .create-event1 .bootstrap-select.style-2.form-control {
+    border-radius: 4px;
+    border: 1px solid #e6ecf5; }
+  .create-event1 .bootstrap-select.style-2 > .dropdown-toggle {
+    padding: 1.1rem;
+    padding-right: 40px;
+    border: none; }
+    .create-event1 .bootstrap-select.style-2 > .dropdown-toggle:after {
+      display: none; }
+  .create-event1 .form-group.label-floating .bootstrap-select.btn-group .dropdown-toggle .filter-option {
+    color: #08ddc1; }
+  .create-event1 .bootstrap-select.style-2 .dropdown-menu {
+    top: auto;
+    bottom: -100%;
+    left: calc(100% + 24px); }
+  .create-event1 .bootstrap-select li.selected a {
+    background-color: #08ddc1; }
+  .create-event1 .bs-searchbox {
+    padding: 0; }
+    .create-event1 .bs-searchbox input {
+      border-radius: 0;
+      border-width: 0 0 1px 0; }
+
+
 .create-event {
   width: 470px; }
   .create-event .icon-close {
