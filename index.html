@@ -34,10 +34,10 @@
 <body>
 
 	<div class="video-background">
-    <div class="video-foreground">
-      <iframe src="https://www.youtube.com/embed/apXGSzStESI?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ&start=100" frameborder="0" allowfullscreen></iframe>
-    </div>
-  </div>
+		<div class="video-foreground">
+			<iframe src="https://www.youtube.com/embed/apXGSzStESI?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&start=100" frameborder="0" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"></iframe>
+		</div>
+	</div>
 
   <!-- Header
   	================================================= -->
@@ -46,11 +46,11 @@
   			<div class="container">
   				<!-- Brand and toggle get grouped for better mobile display -->
   				<div class="navbar-header">
-            		<div id="logo" class="pull-left">
-              			<img src="landing/images/logo.png" alt="logo">
-              			<!-- Uncomment below if you prefer to use an image logo -->
-              			<!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
-            		</div>
+  					<div id="logo" class="pull-left">
+  						<img src="landing/images/logo.png" alt="logo">
+  						<!-- Uncomment below if you prefer to use an image logo -->
+  						<!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
+  					</div>
   				</div>
 
   				<!-- Collect the nav links, forms, and other content for toggling -->
@@ -157,9 +157,9 @@
   									</div>
   									<div class="row">
   										<div class="form-group col-xs-12">
-  										   <label for="password" class="sr-only" lang="se">Bekräfta lösenord</label><label for="password" class="sr-only" lang="ne">Confirm password</label>
-  										   <input lang="se" id="Bpass" class="form-control input-group-lg" type="password" name="losenord" title="Bekräfta lösenord" placeholder="Bekräfta lösenord"/>
-  										   <input lang="ne" id="Cpass" class="form-control input-group-lg" type="password" name="password" title="Enter password" placeholder="Confirm password"/>
+  											<label for="password" class="sr-only" lang="se">Bekräfta lösenord</label><label for="password" class="sr-only" lang="ne">Confirm password</label>
+  											<input lang="se" id="Bpass" class="form-control input-group-lg" type="password" name="losenord" title="Bekräfta lösenord" placeholder="Bekräfta lösenord"/>
+  											<input lang="ne" id="Cpass" class="form-control input-group-lg" type="password" name="password" title="Enter password" placeholder="Confirm password"/>
   										</div>
   									</div>
   									<div class="row">
@@ -304,9 +304,9 @@
   								<p lang="ne"><a href="#" onclick="opentab()">Do you already have an account?</a></p>
   								
   								<form method="get" action="ProfilePage.html">
-   									<button class="btn btn-primary" lang="se">Registrera Nu!</button>
+  									<button class="btn btn-primary" lang="se">Registrera Nu!</button>
   									<button class="btn btn-primary" lang="ne">Register Now!</button>
-								</form>
+  								</form>
   							</div><!--Registration Form Contents Ends-->
 
   							<!--Login-->
@@ -346,9 +346,9 @@
   									</div>
   								</div>
   								<form method="get" action="ProfilePage.html">
-   									<button class="btn btn-primary" lang="se">Logga in</button>
+  									<button class="btn btn-primary" lang="se">Logga in</button>
   									<button class="btn btn-primary" lang="ne">Login</button>
-								</form>  								
+  								</form>  								
   							</div>
   						</div>
   					</div>
@@ -375,45 +375,45 @@
   	</div>
 
   	<!-- Scripts
-  	================================================= -->
-  	<script src="landing/js/jquery-3.1.1.min.js"></script>
-  	<script src="landing/js/bootstrap.min.js"></script>
-  	<script src="landing/js/jquery.appear.min.js"></script>
-  	<script src="landing/js/jquery.incremental-counter.js"></script>
-  	<script src="landing/js/script.js"></script>
+  		================================================= -->
+  		<script src="landing/js/jquery-3.1.1.min.js"></script>
+  		<script src="landing/js/bootstrap.min.js"></script>
+  		<script src="landing/js/jquery.appear.min.js"></script>
+  		<script src="landing/js/jquery.incremental-counter.js"></script>
+  		<script src="landing/js/script.js"></script>
 
-  	<!--Open login tab-->
-  	<script type="text/javascript">
-  		function opentab(){
-  			$('[href="#login"]').tab('show');
-  		}
-  	</script>
+  		<!--Open login tab-->
+  		<script type="text/javascript">
+  			function opentab(){
+  				$('[href="#login"]').tab('show');
+  			}
+  		</script>
 
-  	<!--language script-->
-  	<script type="text/javascript">	
-		$('[lang="ne"]').hide();
+  		<!--language script-->
+  		<script type="text/javascript">	
+  			$('[lang="ne"]').hide();
 
-		$("#swedish").click(function() {
-		$('[lang="se"]').show();
-		$('[lang="ne"]').hide();
-		});
+  			$("#swedish").click(function() {
+  				$('[lang="se"]').show();
+  				$('[lang="ne"]').hide();
+  			});
 
 
-		$("#swedishh").click(function() {
-		$('[lang="se"]').show();
-		$('[lang="ne"]').hide();
-		});
+  			$("#swedishh").click(function() {
+  				$('[lang="se"]').show();
+  				$('[lang="ne"]').hide();
+  			});
 
-		$("#english").click(function() {
-		$('[lang="se"]').hide();
-		$('[lang="ne"]').show();
-		});
+  			$("#english").click(function() {
+  				$('[lang="se"]').hide();
+  				$('[lang="ne"]').show();
+  			});
 
-		$("#englishh").click(function() {
-		$('[lang="se"]').hide();
-		$('[lang="ne"]').show();
-		});
-	</script>
+  			$("#englishh").click(function() {
+  				$('[lang="se"]').hide();
+  				$('[lang="ne"]').show();
+  			});
+  		</script>
 
-</body>
-</html>
+  	</body>
+  	</html>
