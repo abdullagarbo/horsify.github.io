@@ -488,7 +488,7 @@
   bottom: 0;
   left: 0;
   width: 200%;
-  height: 400%;
+  height: 200%;
   content: ""; }
 
 .content-bg {
@@ -1612,14 +1612,14 @@
   padding: 40px 15px 90px; }
 
 .mobile-app .img-bottom {
-  max-height: 80px; }
+  max-height: 60px; }
 
 .mobile-app .choose-photo-item {
   padding: 0 5px 5px 0; }
 
 .mobile-app .choose-from-my-photo .btn + .btn {
   margin-left: 5px; }
-
+  
 .about-olympus {
   padding: 0 25px;
   margin-bottom: 15px; }
