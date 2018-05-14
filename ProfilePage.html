@@ -2539,7 +2539,7 @@
 				<!-- Main Header BlogV1 -->
 				<div class="main-header">
 					<div class="content-bg-wrap">
-						<div class="content-bg bg-account"></div>
+
 					</div>
 				</div>
 				<div class="profile-section">
@@ -2554,7 +2554,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="btn btn-control bg-primary more" title="Ny inlägg">
+						<div class="btn btn-control bg-primary more" data-toggle="modal" data-target="#new-post" title="Ny inlägg">
 							<svg class="fa fa-plus-circle" style="color: White"></svg>
 						</div>
 					</div>
@@ -2585,7 +2585,7 @@
 											</time>
 										</div>
 									</div>
-									<a href="#" class="h3 post-title">Lorem ipsum dolor sit amet, consect adi </a>
+									<a href="#" class="h3 post-title" data-toggle="modal" data-target="#open-post" onmouseover="playclip();" onmouseout="stopclip();">Lorem ipsum dolor sit amet, consect adi </a>
 									<p>Lorem ipsum dolor sit amet, consect adipisicing elit, sed do eiusmod por incidid ut labore et.</p>
 									<div class="post-additional-info inline-items">
 										<ul class="friends-harmonic">
@@ -7115,19 +7115,19 @@
 											</li>
 											<li>
 												<a id="hastjornal" href="#" onclick="show_horse_journal()">Hästjournal</a>
-											</li>																					
+											</li>
+											<li>
+												<a id="trainingjornal" href="#" onclick="show_training_journal()">Träningsdagbok</a>
+											</li>																				
 										</ul>
 									</div>
 									<div class="col-lg-6 col-md-6 ">
 										<ul class="profile-menu">
 											<li>
-												<a id="trainingjornal" href="#" onclick="show_training_journal()">Träningsdagbok</a>
-											</li>
-											<li>
 												<a id="tavlingjornal" href="#" onclick="show_tavling_journal()">Tävlingsplanering</a>
 											</li>
 											<li>
-												<a id="trainare" href="#" onclick="show_horse_trainer()">Tränare</a>
+												<a id="trainare" href="#" onclick="show_horsekontakt()">Hästkontakter</a>
 											</li>
 											<li>
 												<a id="edithorse" href="#" onclick="show_edit_horse_profile()">Redigera profil</a>
@@ -9044,6 +9044,691 @@
 			</div>	
 		</div>
 		<!---tavling journal end-->
+
+		<!---horsekontakt start-->
+		<div id="horsekontakt" style="display: none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="ui-block">
+							<div class="ui-block-content">	
+								<form>
+									<div class="row">
+
+										<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+											<div class="form-group label-floating">
+												<label class="control-label"></label>
+												<input class="form-control" placeholder="Sök..." type="text" value="">
+											</div>
+										</div>
+										<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 align-right">
+											<a href="#" class="btn btn-primary btn-md">SÖk</a>
+										</div>
+									</div>	
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">																		
+				<div class="row">																			
+					<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<div class="ui-block">
+							<div class="news-feed-form">
+								<ul class="nav nav-tabs" role="tablist">
+									<li class="nav-item">
+										<a class="nav-link active inline-items" data-toggle="tab" href="#trainer" role="tab" aria-expanded="true">											
+											<span>Tränare</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link inline-items" data-toggle="tab" href="#hovslag" role="tab" aria-expanded="false">											
+											<span>Hovslagare</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link inline-items" data-toggle="tab" href="#massor" role="tab" aria-expanded="false">											
+											<span>Massör</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link inline-items" data-toggle="tab" href="#vetrin" role="tab" aria-expanded="false">											
+											<span>Vetrinär</span>
+										</a>
+									</li>
+								</ul>
+
+								<!-- Tab panes -->
+								<div class="tab-content">
+									<div class="tab-pane active" id="trainer" role="tabpanel" aria-expanded="true">
+										<div class="ui-block">
+											<ul class="widget w-friend-pages-added notification-list friend-requests">
+												<div class="row">
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar1-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Johanna Sköberg</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar2-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Johan Andersson</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar3-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Jolina Sandström</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar4-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Alex Anderss</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar5-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Martina Åland</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar6-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Joke andersson</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+												</div>
+											</ul>
+										</div>
+									</div>
+
+									<div class="tab-pane" id="hovslag" role="tabpanel" aria-expanded="true">
+										<div class="ui-block">
+											<ul class="widget w-friend-pages-added notification-list friend-requests">
+												<div class="row">
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar5-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Johanna Sköberg</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar4-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Johan Andersson</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar1-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Jolina Sandström</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar2-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Alex Anderss</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar8-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Martina Åland</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar7-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Joke andersson</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+												</div>
+											</ul>
+										</div>										
+									</div>
+
+									<div class="tab-pane" id="massor" role="tabpanel" aria-expanded="true">
+										<div class="ui-block">
+											<ul class="widget w-friend-pages-added notification-list friend-requests">
+												<div class="row">
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar9-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Johanna Sköberg</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar5-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Johan Andersson</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar7-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Jolina Sandström</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar6-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Alex Anderss</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar2-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Martina Åland</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar4-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Joke andersson</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+												</div>
+											</ul>
+										</div>										
+									</div>
+
+									<div class="tab-pane" id="vetrin" role="tabpanel" aria-expanded="true">
+										<div class="ui-block">
+											<ul class="widget w-friend-pages-added notification-list friend-requests">
+												<div class="row">
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar3-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Johanna Sköberg</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar9-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Johan Andersson</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar6-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Jolina Sandström</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar7-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Alex Anderss</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+												</div>
+												<div class="row">
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar1-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Martina Åland</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+													<div class="col-xl-6">
+														<li class="inline-items">												
+															<a>
+																<img src="img/avatar2-sm.jpg" alt="author">
+															</a>												
+															<div class="notification-event">
+																<a href="#" class="h6 notification-friend">Joke andersson</a>
+																<a href="#" class="h6 notification-friend">Hästtränare</a>
+																<span class="chat-message-item">Sundsvall</span>
+															</div>
+															<span class="notification-icon">
+																<a href="#" class="accept-request">
+																	<span>
+																		<svg class="fas fa-arrow-circle-right"></svg>
+																	</span>
+																</a>
+															</span>
+														</li>
+													</div>
+												</div>
+											</ul>
+										</div>										
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+		<!---horsekontakt end-->
+
+		<!---horseedit start-->
+		<div id="horseedit" style="display: none;">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-12 order-xl-2 col-lg-9 order-lg-2 col-md-12 order-md-1 col-sm-12 col-xs-12">						
+						<div id="pers_info"><!-- ... start personlig information -->
+							<div class="ui-block">
+								<div class="ui-block-title">
+									<h6 class="title">Häst information</h6>
+								</div>
+								<div class="ui-block-content">
+									<form>
+										<div class="row">
+											<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+												<div class="form-group label-floating">
+													<label class="control-label">Ägare</label>
+													<input class="form-control" placeholder="" type="text" value="Johan Landström">
+												</div>
+												<div class="form-group label-floating">
+													<label class="control-label">Uppfödare</label>
+													<input class="form-control" placeholder="" type="email" value="Mikaela Sköberg">
+												</div>
+												<div class="form-group label-floating">
+													<label class="control-label">Regnummer</label>
+													<input class="form-control" placeholder="" type="text" value="R-H4757777">
+												</div>
+												<div class="form-group label-floating">
+													<label class="control-label">Chipnummer</label>
+													<input class="form-control" placeholder="" type="text" value="C-76968555">
+												</div>
+												<div class="form-group label-floating">
+													<label class="control-label">Skriv en beskrivning om hästen</label>
+													<textarea class="form-control" placeholder="">ksjjdldoö,xnwuwpa.xcnd.zäöaåaodfmc,sjhwirpyå-cmshsv</textarea>
+												</div>
+												<div class="form-group label-floating">
+													<label class="control-label">Hälsa historik</label>
+													<textarea class="form-control" placeholder="">ksjjdldoö,xnwuwpa.xcnd.zäöaåaodfmc,sjhwirpyå-cmshsv</textarea>
+												</div>
+												<div class="form-group label-floating">
+													<label class="control-label">Träning historik</label>
+													<textarea class="form-control" placeholder="">ksjjdldoö,xnwuwpa.xcnd.zäöaåaodfmc,sjhwirpyå-cmshsv</textarea>
+												</div>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+												<div class="form-group label-floating">
+													<label class="control-label">Passnummer</label>
+													<input class="form-control" placeholder="" type="text" value="245453453454353">
+												</div>
+												<div class="form-group label-floating">
+													<label class="control-label">Hästras</label>
+													<input class="form-control" placeholder="" type="email" value="Varmblod">
+												</div>
+												<div class="form-group date-time-picker label-floating">
+													<label class="control-label">Född</label>
+													<input name="datetimepicker" value="10/24/1984" />
+													<span class="input-group-addon">
+														<svg class="fa fa-calendar-alt fa-2x"></svg>
+													</span>
+												</div>
+												<div class="form-group label-floating is-select">
+													<label class="control-label">Skön</label>
+													<select class="selectpicker form-control" size="auto">
+														<option value="SE">Hingst</option>
+														<option value="FI">Sto</option>
+													</select>
+												</div>
+												<div class="form-group label-floating is-select">
+													<label class="control-label">Kategori</label>
+													<select class="selectpicker form-control" size="auto">
+														<option value="VE">A</option>
+														<option value="GA">B</option>
+													</select>
+												</div>
+												<div class="form-group label-floating">
+													<label class="control-label">Födelseort</label>
+													<input class="form-control" placeholder="" type="text" value="Sundsvall">
+												</div>
+
+												<div class="form-group label-floating is-select">
+													<label class="control-label">Födelseland</label>
+													<select class="selectpicker form-control" size="auto">
+														<option value="MA">Sverige</option>
+														<option value="FE">Norige</option>
+														<option value="FE">Finland</option>
+													</select>
+												</div>
+												<div class="form-group label-floating">
+													<label class="control-label">Dagliga vanor</label>
+													<textarea class="form-control" placeholder="">ksjjdldoö,xnwuwpa.xcnd.zäöaåaodfmc,sjhwirpyå-cmshsv</textarea>
+												</div><div class="form-group label-floating">
+													<label class="control-label">Tecken</label>
+													<textarea class="form-control" placeholder="">ksjjdldoö,xnwuwpa.xcnd.zäöaåaodfmc,sjhwirpyå-cmshsv</textarea>
+												</div>
+											</div>											
+											<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+												<button class="btn btn-secondary btn-lg full-width">Återställ attribut</button>
+											</div>
+											<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+												<button class="btn btn-primary btn-lg full-width">Spara ändringar</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div><!-- ... end personlig information -->
+					</div>
+				</div>	
+			</div>	
+		</div>
+		<!---horseedit end-->
 	</div>	
 	<!---horse profile section end-->
 
@@ -9075,7 +9760,25 @@
 								</div>
 								<div class="info-box-content">
 									<h3 class="info-box-title">HÄST</h3>
-									<p class="info-box-text">Lorem ipsum dolor sit amet, consectetur cing elit, sed do eiusmod tempor incididunt ut la etere dolore magna aliqua.</p>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
 								</div>
 							</div>
 							
@@ -9093,7 +9796,25 @@
 								</div>
 								<div class="info-box-content">
 									<h3 class="info-box-title">RYTTARE</h3>
-									<p class="info-box-text">Lorem ipsum dolor sit amet, consectetur cing elit, sed do eiusmod tempor incididunt ut la etere dolore magna aliqua.</p>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
 								</div>
 							</div>
 							
@@ -9111,7 +9832,25 @@
 								</div>
 								<div class="info-box-content">
 									<h3 class="info-box-title">STALL</h3>
-									<p class="info-box-text">Lorem ipsum dolor sit amet, consectetur cing elit, sed do eiusmod tempor incididunt ut la etere dolore magna aliqua.</p>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>								
 								</div>
 							</div>
 							
@@ -9129,7 +9868,25 @@
 								</div>
 								<div class="info-box-content">
 									<h3 class="info-box-title">RIDHUS</h3>
-									<p class="info-box-text">Lorem ipsum dolor sit amet, consectetur cing elit, sed do eiusmod tempor incididunt ut la etere dolore magna aliqua.</p>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
 								</div>
 							</div>
 							
@@ -9147,7 +9904,25 @@
 								</div>
 								<div class="info-box-content">
 									<h3 class="info-box-title">FODER</h3>
-									<p class="info-box-text">Lorem ipsum dolor sit amet, consectetur cing elit, sed do eiusmod tempor incididunt ut la etere dolore magna aliqua.</p>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
 								</div>
 							</div>
 							
@@ -9165,7 +9940,25 @@
 								</div>
 								<div class="info-box-content">
 									<h3 class="info-box-title">TRANSPORTER</h3>
-									<p class="info-box-text">Lorem ipsum dolor sit amet, consectetur cing elit, sed do eiusmod tempor incididunt ut la etere dolore magna aliqua.</p>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
+									<a href="#0 class="info-box-text" style="color: blue;"><u>Lorem</u></a>
 								</div>
 							</div>
 							
@@ -9793,6 +10586,119 @@
 	</div>
 	<!-- ... end Window-popup Create Event -->
 
+	<!-- Window-popup open post -->
+	<div class="modal fade" id="open-post">
+		<div class="modal-dialog ui-block window-popup create-event">
+			<a href="#" class="close icon-close" data-dismiss="modal" aria-label="Close">
+				<svg class="fa fa-times"></svg>
+			</a>
+			<div class="ui-block">
+				
+				<!-- Post -->
+				
+				<article class="hentry post has-post-thumbnail thumb-full-width">
+
+					<div class="post__author author vcard inline-items">
+						<img src="img/author-page.jpg" alt="author">
+
+						<div class="author-date">
+							<a class="h6 post__author-name fn" href="#">James Spiegel</a> wrote a <a href="#">blog post</a>
+							<div class="post__date">
+								<time class="published" datetime="2017-03-24T18:18">
+									7 hours ago
+								</time>
+							</div>
+						</div>				
+					</div>
+
+					<div class="post-thumb">
+						<img src="img/post1.jpg" alt="photo">
+					</div>
+
+					<a href="#" data-toggle="modal" data-target="#blog-post-popup" class="h2 post-title">My Perfect Vacations in South America and Europe</a>
+
+					<p>Lorem ipsum dolor sit amet, consectadipisicing elit, sed do eiusmod por incidid ut labore et
+						dolore magna aliqua. Ut enim ad minim veniam, quis nostrud lorem exercitation ullamco laboris
+						nisi ut aliquip ex ea commodo consequat. Duis en aute irure dolor in reprehenderit in voluptate
+						velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+						sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+						totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+						dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+						sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt...
+					</p>
+
+				</article>
+				
+				<!-- ... end Post -->
+			</div>
+		</div>
+	</div>
+	<!-- ... end Window-popup open post -->
+
+	<!-- Window-popup new post -->
+	<div class="modal fade" id="new-post" style="top: 300px;">
+		<div class="modal-dialog ui-block window-popup create-photo-album">
+			<a href="#" class="close icon-close" data-dismiss="modal" aria-label="Close">
+				<svg class="fa fa-times"></svg>
+			</a>
+			<div class="news-feed-form">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">				
+					<li class="nav-item">
+						<a class="nav-link inline-items" data-toggle="tab" href="#blog" role="tab" aria-expanded="false">
+							<svg class="fab fa-blogger-b fa-2x"></svg>
+
+							<span>Blog Post</span>
+						</a>
+					</li>
+				</ul>
+				
+				<!-- Tab panes -->
+				<div class="tab-content">				
+					<div class="tab-pane active" id="blog" role="tabpanel" aria-expanded="true">
+						<form>
+							<div class="author-thumb">
+								<img src="img/author-page.jpg" alt="author">
+							</div>
+							<div class="form-group with-icon label-floating is-empty">
+								<label class="control-label">Share what you are thinking here...</label>
+								<textarea class="form-control" placeholder=""  ></textarea>
+							</div>
+							<div class="add-options-message">
+								<a href="#" class="options-message" data-toggle="tooltip" data-placement="top"   data-original-title="ADD PHOTOS">
+									<svg class="fa fa-camera fa-2x" data-toggle="modal" data-target="#update-header-photo"></svg>
+								</a>
+								<a href="#" class="options-message" data-toggle="tooltip" data-placement="top"   data-original-title="TAG YOUR FRIENDS">
+									<svg class="fas fa-desktop fa-2x"></svg>
+								</a>
+
+								<a href="#" class="options-message" data-toggle="tooltip" data-placement="top"   data-original-title="ADD LOCATION">
+									<svg class="fas fa-map-marker fa-2x"></svg>
+								</a>
+
+								<button class="btn btn-primary btn-md-2">Post Status</button>				
+							</div>
+
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<!-- ... end News Feed Form  --></div>
+
+		</div>
+	</div>
+	<!-- ... end Window-popup new post -->
+
+	<audio>
+		<source src="audio/click.mp3"></source>
+		<source src="audio/click.ogg"></source>
+	</audio>
+
+
 	<!-- JS. -->
 	<script src="js/jquery-3.2.0.min.js"></script>
 	<script src="js/material.min.js"></script>
@@ -9807,6 +10713,7 @@
 	<script src="js/simplecalendar.js"></script>
 	<script src="js/moment.min.js"></script>
 	<script src="js/daterangepicker.min.js"></script>
+	<script src="js/sound-mouseover.js" type="text/javascript"></script>
 
 
 	<script type="text/javascript">
@@ -10255,12 +11162,14 @@
 
 	<script type="text/javascript">
 		function hyyyyde(){
-			$("#horse_info, #horse_galleri, #horse_journal, #training_journal, #tavling_jornal").hide();									
+			$("#horse_info, #horse_galleri, #horse_journal, #training_journal, #tavling_jornal, #horsekontakt, #horseedit").hide();									
 		}
 
 		function show_horse_info(){
 			hyyyyde(); $("#horse_info").show();
 			$("#hastinfo").addClass("active");
+			$("#edithorse").removeClass("active");
+			$("#trainare").removeClass("active");
 			$("#hastbild").removeClass("active");
 			$("#hastjornal").removeClass("active");
 			$("#trainingjornal").removeClass("active");
@@ -10270,6 +11179,8 @@
 		function show_horse_galleri(){
 			hyyyyde(); $("#horse_galleri").show();
 			$("#hastbild").addClass("active");
+			$("#edithorse").removeClass("active");
+			$("#trainare").removeClass("active");
 			$("#hastinfo").removeClass("active");
 			$("#hastjornal").removeClass("active");
 			$("#trainingjornal").removeClass("active");
@@ -10279,6 +11190,8 @@
 		function show_horse_journal(){
 			hyyyyde(); $("#horse_journal").show();
 			$("#hastjornal").addClass("active");
+			$("#edithorse").removeClass("active");
+			$("#trainare").removeClass("active");
 			$("#hastinfo").removeClass("active");
 			$("#hastbild").removeClass("active");
 			$("#trainingjornal").removeClass("active");
@@ -10288,6 +11201,8 @@
 		function show_training_journal(){
 			hyyyyde(); $("#training_journal").show();
 			$("#trainingjornal").addClass("active");
+			$("#edithorse").removeClass("active");
+			$("#trainare").removeClass("active");
 			$("#hastjornal").removeClass("active");
 			$("#hastinfo").removeClass("active");
 			$("#hastbild").removeClass("active");
@@ -10297,11 +11212,36 @@
 		function show_tavling_journal(){
 			hyyyyde(); $("#tavling_jornal").show();
 			$("#tavlingjornal").addClass("active");
+			$("#edithorse").removeClass("active");
+			$("#trainare").removeClass("active");
 			$("#trainingjornal").removeClass("active");
 			$("#hastjornal").removeClass("active");
 			$("#hastinfo").removeClass("active");
 			$("#hastbild").removeClass("active");
-		}									
+		}
+
+		function show_horsekontakt(){
+			hyyyyde(); $("#horsekontakt").show();
+			$("#trainare").addClass("active");
+			$("#edithorse").removeClass("active");
+			$("#tavlingjornal").removeClass("active");
+			$("#trainingjornal").removeClass("active");
+			$("#hastjornal").removeClass("active");
+			$("#hastinfo").removeClass("active");
+			$("#hastbild").removeClass("active");
+		}
+
+		function show_edit_horse_profile(){
+			hyyyyde(); $("#horseedit").show();			
+			$("#edithorse").addClass("active");
+			$("#trainare").removeClass("active");
+			$("#tavlingjornal").removeClass("active");
+			$("#trainingjornal").removeClass("active");
+			$("#hastjornal").removeClass("active");
+			$("#hastinfo").removeClass("active");
+			$("#hastbild").removeClass("active");
+		}
+
 	</script>
 
 </body>
