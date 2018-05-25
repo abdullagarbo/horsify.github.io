@@ -3,12 +3,10 @@ function hide() {
     $("#main_section").hide();
     $("#main_header, #followers_section, #bild_gallery, #video_gallery, #mykonto, #aboutme").addClass("hide");
     $("#pers_info, #konto_inst, #change_pass, #hobby_intress, #notifikatin, #blogg_request").addClass("hide");
-    $("#blogg_section, #blogg_header, #blogg_post, #find_blogg, #blogg_follow, #service_page, #foto_gallery, #shopping_page, #calendar_section").addClass("hide");
-    $("#horse_kat, #rytt_kat, #stall_kat, #foder_kat, #trans_kat, #service_kat, #prod_kat, #hagar_kat, #vagnar_kat, #sadlar_kat, #tillb_kat").addClass("hide");
-    $("#transs_kat, #alla_kat").addClass("hide");
+    $("#blogg_section, #blogg_header, #blogg_post, #find_blogg, #blogg_follow, #blogg_setting, #service_page, #foto_gallery, #shopping_page, #calendar_section").addClass("hide");
+    $("#horse_kat, #rytt_kat, #stall_kat, #foder_kat, #trans_kat, #service_kat, #prod_kat, #hagar_kat, #vagnar_kat, #sadlar_kat, #tillb_kat, #transs_kat, #alla_kat").addClass("hide");
     $("#horse_header, #horse_header_sub, #myhorses, #reg_horse, #find_horse, #horse_forening, #horse_forum").addClass("hide");
-    $("#horse_tidning, #horse_faqs, #horse_wiki").addClass("hide");
-    $("#horse_info, #horse_galleri, #horse_journal, #training_journal, #tavling_jornal, #horsekontakt, #horseedit").addClass("hide");
+    $("#horse_tidning, #horse_faqs, #horse_wiki, #horse_info, #horse_galleri, #horse_journal, #training_journal, #tavling_jornal, #horsekontakt, #horseedit").addClass("hide");
 }
 
 function show_main_section() {
@@ -262,6 +260,7 @@ function show_blogg(){
     $("#blogPost").removeClass("active");
     $("#blogFind").removeClass("active");
     $("#blogFollw").removeClass("active");
+    $("#bloggSett").removeClass("active");
 }
 
 function show_blogg_post(){
@@ -271,6 +270,7 @@ function show_blogg_post(){
     $("#blogHem").removeClass("active");
     $("#blogFind").removeClass("active");
     $("#blogFollw").removeClass("active");
+    $("#bloggSett").removeClass("active");
 }
 
 function show_find_blogg(){
@@ -280,12 +280,24 @@ function show_find_blogg(){
     $("#blogPost").removeClass("active");
     $("#blogHem").removeClass("active");
     $("#blogFollw").removeClass("active");
+    $("#bloggSett").removeClass("active");
 }
 
 function show_blogg_follow(){
     hide(); $("#blogg_header").removeClass("hide");
     $("#blogg_follow").removeClass("hide");
     $("#blogFollw").addClass("active");
+    $("#blogFind").removeClass("active");
+    $("#blogPost").removeClass("active");
+    $("#blogHem").removeClass("active");
+    $("#bloggSett").removeClass("active");
+}
+
+function show_blogg_setting(){
+    hide(); $("#blogg_header").removeClass("hide");
+    $("#blogg_setting").removeClass("hide");
+    $("#bloggSett").addClass("active");
+    $("#blogFollw").removeClass("active");
     $("#blogFind").removeClass("active");
     $("#blogPost").removeClass("active");
     $("#blogHem").removeClass("active");

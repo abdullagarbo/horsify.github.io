@@ -2203,7 +2203,7 @@
 
 								<div class="author-date">
 									<a class="h6 post__author-name fn" href="#">Johan Landström</a> delade
-									<a href="#">Diana Jameson</a>’s <a href="#">bild</a>
+									<a href="#">Diana Jameson</a>’s bild
 									<div class="post__date">
 										<time class="published" datetime="2017-03-24T18:18">
 											7 timmar sedan
@@ -6202,7 +6202,7 @@
 												<a id="blogFollw" href="javascript:show_blogg_follow();">Mina följare</a>
 											</li>
 											<li>
-												<a id="mittkonto" href="#">Blogg inställningar</a>
+												<a id="bloggSett" href="javascript:show_blogg_setting();">Blogg inställningar</a>
 											</li>
 										</ul>
 									</div>
@@ -6346,7 +6346,7 @@
 								<img src="img/avatar1.jpg" alt="author">
 
 								<div class="author-date">
-									<a class="h6 post__author-name fn" href="02-ProfilePage.html">Alex Johanson</a> skrev <a href="#">blogg inlägg</a>
+									<a class="h6 post__author-name fn" href="02-ProfilePage.html">Alex Johanson</a> skrev blogg inlägg
 									<div class="post__date">
 										<time class="published" datetime="2017-03-24T18:18">
 											3 timmar sedan
@@ -6472,7 +6472,7 @@
 								<img src="img/avatar8.jpg" alt="author">
 
 								<div class="author-date">
-									<a class="h6 post__author-name fn" href="02-ProfilePage.html">Johan Landström</a> skrev <a href="#">blogg inlägg</a>
+									<a class="h6 post__author-name fn" href="02-ProfilePage.html">Johan Landström</a> skrev blogg inlägg
 									<div class="post__date">
 										<time class="published" datetime="2017-03-24T18:18">
 											2 timmar sedan
@@ -6598,7 +6598,7 @@
 								<img src="img/avatar7.jpg" alt="author">
 
 								<div class="author-date">
-									<a class="h6 post__author-name fn" href="02-ProfilePage.html">Amanda Spiegel</a> skrev <a href="#">blogg inlägg</a>
+									<a class="h6 post__author-name fn" href="02-ProfilePage.html">Amanda Spiegel</a> skrev blogg inlägg
 									<div class="post__date">
 										<time class="published" datetime="2017-03-24T18:18">
 											7 timmar sedan
@@ -6716,6 +6716,90 @@
 		</div>			
 	</div>
 
+	<div id="blogg_setting" class="container hide">
+		<div class="row">
+			<div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+			<div class="ui-block">
+				<div class="ui-block-content">
+
+					
+					<!-- Personal Account Settings Form -->
+					
+					<form>
+						<div class="row">
+					
+							<div class="col col-lg-6 col-md-6 col-sm-12 col-12">
+								<a href="#" data-toggle="modal" data-target="#update-header-photo" class="btn btn-primary btn-lg full-width">Uppdatera blogg bild</a>
+								<a href="#" data-toggle="modal" data-target="#update-header-photo" class="btn btn-primary btn-lg full-width">Uppdatera bakgrunden</a>
+							</div>
+							<div class="col col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+								<div class="description-toggle">
+									<div class="description-toggle-content">
+										<div class="h6">Meddelanden Ljud</div>
+										<p>Ett ljud spelas upp varje gång du får en ny aktivitetsmeddelande</p>
+									</div>
+					
+									<div class="togglebutton">
+										<label>
+											<input type="checkbox" checked="">
+										</label>
+									</div>
+								</div>
+								<div class="description-toggle">
+									<div class="description-toggle-content">
+										<div class="h6">Meddelanden Email</div>
+										<p>Vi skickar dig ett mail till ditt konto varje gång du får en ny aktivitetsmeddelande</p>
+									</div>
+					
+									<div class="togglebutton">
+										<label>
+											<input type="checkbox" checked="">
+										</label>
+									</div>
+								</div>
+								<div class="description-toggle">
+									<div class="description-toggle-content">
+										<div class="h6">Följares födelsedagar</div>
+										<p>Välj om du vill få meddelanden om din väns födelsedagar på din newsfeed</p>
+									</div>
+					
+									<div class="togglebutton">
+										<label>
+											<input type="checkbox" checked="">
+										</label>
+									</div>
+								</div>
+								<div class="description-toggle">
+									<div class="description-toggle-content">
+										<div class="h6">Chat Meddelande Ljud</div>
+										<p>Ett ljud spelas upp varje gång du får ett nytt meddelande i ett inaktivt chatfönster</p>
+									</div>
+					
+									<div class="togglebutton">
+										<label>
+											<input type="checkbox" checked="">
+										</label>
+									</div>
+								</div>
+							</div>
+					
+							<div class="col col-lg-6 col-md-6 col-sm-12 col-12">
+								<button class="btn btn-secondary btn-lg full-width">Återställ alla attribut</button>
+							</div>
+							<div class="col col-lg-6 col-md-6 col-sm-12 col-12">
+								<button class="btn btn-primary btn-lg full-width">Spara alla ändringar</button>
+							</div>
+						</div>
+					</form>
+					
+					<!-- ... end Personal Account Settings Form  -->
+
+				</div>
+			</div>
+		</div>			
+		</div>
+	</div>
+
 	<div id="blogg_follow" class="hide">
 		<div class="container">
 			<div class="row">
@@ -6731,7 +6815,7 @@
 								<img src="img/avatar8.jpg" alt="author">
 
 								<div class="author-date">
-									<a class="h6 post__author-name fn" href="02-ProfilePage.html">Alex Landström</a> skrev <a href="#">blogg inlägg</a>
+									<a class="h6 post__author-name fn" href="02-ProfilePage.html">Alex Landström</a> skrev blogg inlägg
 									<div class="post__date">
 										<time class="published" datetime="2017-03-24T18:18">
 											2 timmar sedan
@@ -6858,7 +6942,7 @@
 								<img src="img/avatar7.jpg" alt="author">
 
 								<div class="author-date">
-									<a class="h6 post__author-name fn" href="02-ProfilePage.html">Johanna Landström</a> skrev <a href="#">blogg inlägg</a>
+									<a class="h6 post__author-name fn" href="02-ProfilePage.html">Johanna Landström</a> skrev blogg inlägg
 									<div class="post__date">
 										<time class="published" datetime="2017-03-24T18:18">
 											2 timmar sedan
@@ -6985,7 +7069,7 @@
 								<img src="img/avatar6.jpg" alt="author">
 
 								<div class="author-date">
-									<a class="h6 post__author-name fn" href="02-ProfilePage.html">Johan Landström</a> skrev <a href="#">blogg inlägg</a>
+									<a class="h6 post__author-name fn" href="02-ProfilePage.html">Johan Landström</a> skrev blogg inlägg
 									<div class="post__date">
 										<time class="published" datetime="2017-03-24T18:18">
 											2 timmar sedan
@@ -7491,7 +7575,251 @@
 									<img src="img/avatar1.jpg" alt="author">
 
 									<div class="author-date">
-										<a class="h6 post__author-name fn" href="02-ProfilePage.html">Alex Johanson</a> skrev <a href="#">blogg inlägg</a>
+										<a class="h6 post__author-name fn" href="02-ProfilePage.html">Alex Johanson</a> skrev blogg inlägg
+										<div class="post__date">
+											<time class="published" datetime="2017-03-24T18:18">
+												3 timmar sedan
+											</time>
+										</div>
+									</div>
+
+									<div class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+										<ul class="more-dropdown">
+											<li>
+												<a href="#">Redigera inlägg</a>
+											</li>
+											<li>
+												<a href="#">Ta bort inlägg</a>
+											</li>
+											<li>
+												<a href="#">Stäng av notifikationer</a>
+											</li>
+										</ul>
+									</div>
+
+								</div>
+
+								<div class="post-thumb">
+									<img src="img/post1.jpg" alt="photo">
+								</div>
+
+								<h2 class="post-title"> amet, consectadipisicing elit, sed do ei</h2>
+
+								<p>Lorem ipsum dolor sit amet, consectadipisicing elit, sed do eiusmod por incidid ut labore et
+									dolore magna aliqua. Ut enim ad minim veniam, quis nostrud lorem exercitation ullamco laboris
+									nisi ut aliquip ex ea commodo consequat.
+								</p>
+
+								<a href="#" data-toggle="modal" data-target="#blog-post-popup" class="btn btn-md-2 btn-border-think c-grey btn-transparent custom-color">Läs mer</a>
+
+								<div class="post-additional-info inline-items">
+
+									<a href="#" class="post-add-icon inline-items">
+										<svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+										<span>5</span>
+									</a>
+
+									<div class="names-people-likes">
+										<a href="#">Diana </a>, <a href="#">Nicholas</a> och
+										<br>15 mer gillade detta
+									</div>
+
+
+									<div class="comments-shared">
+										<a href="#" class="post-add-icon inline-items">
+											<svg class="olymp-speech-balloon-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-speech-balloon-icon"></use></svg>
+											<span>6</span>
+										</a>
+
+										<a href="#" class="post-add-icon inline-items">
+											<svg class="olymp-share-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-share-icon"></use></svg>
+											<span>8</span>
+										</a>
+									</div>
+
+
+								</div>
+
+								<div class="control-block-button post-control-button">
+
+									<a href="#" class="btn btn-control">
+										<svg class="olymp-like-post-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-like-post-icon"></use></svg>
+									</a>
+
+									<a href="#" class="btn btn-control">
+										<svg class="olymp-comments-post-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+									</a>
+
+									<a href="#" class="btn btn-control">
+										<svg class="olymp-share-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-share-icon"></use></svg>
+									</a>
+
+								</div>
+
+							</article>
+
+							<!-- ... end Post -->
+
+							<!-- Comment Form  -->
+
+							<form class="comment-form inline-items">
+
+								<div class="post__author author vcard inline-items">
+									<img src="img/author-page.jpg" alt="author">
+
+									<div class="form-group with-icon-right ">
+										<textarea class="form-control" placeholder=""></textarea>
+										<div class="add-options-message">
+											<a href="#" class="options-message" data-toggle="modal" data-target="#update-header-photo">
+												<svg class="olymp-camera-icon">
+													<use xlink:href="svg-icons/sprites/icons.svg#olymp-camera-icon"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<button class="btn btn-md-2 btn-primary">Publicera kommentar</button>
+
+							</form>
+
+							<!-- ... end Comment Form  -->
+						</div>
+
+						<div class="ui-block">
+
+
+							<!-- Post -->
+
+							<article class="hentry post has-post-thumbnail thumb-full-width">
+
+								<div class="post__author author vcard inline-items">
+									<img src="img/avatar2.jpg" alt="author">
+
+									<div class="author-date">
+										<a class="h6 post__author-name fn" href="02-ProfilePage.html">Johanna Johanson</a> skrev blogg inlägg
+										<div class="post__date">
+											<time class="published" datetime="2017-03-24T18:18">
+												3 timmar sedan
+											</time>
+										</div>
+									</div>
+
+									<div class="more"><svg class="olymp-three-dots-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-three-dots-icon"></use></svg>
+										<ul class="more-dropdown">
+											<li>
+												<a href="#">Redigera inlägg</a>
+											</li>
+											<li>
+												<a href="#">Ta bort inlägg</a>
+											</li>
+											<li>
+												<a href="#">Stäng av notifikationer</a>
+											</li>
+										</ul>
+									</div>
+
+								</div>
+
+								<div class="post-thumb">
+									<img src="img/post2.jpg" alt="photo">
+								</div>
+
+								<h2 class="post-title"> amet, consectadipisicing elit, sed do ei</h2>
+
+								<p>Lorem ipsum dolor sit amet, consectadipisicing elit, sed do eiusmod por incidid ut labore et
+									dolore magna aliqua. Ut enim ad minim veniam, quis nostrud lorem exercitation ullamco laboris
+									nisi ut aliquip ex ea commodo consequat.
+								</p>
+
+								<a href="#" data-toggle="modal" data-target="#blog-post-popup" class="btn btn-md-2 btn-border-think c-grey btn-transparent custom-color">Läs mer</a>
+
+								<div class="post-additional-info inline-items">
+
+									<a href="#" class="post-add-icon inline-items">
+										<svg class="olymp-heart-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-heart-icon"></use></svg>
+										<span>5</span>
+									</a>
+
+									<div class="names-people-likes">
+										<a href="#">Diana </a>, <a href="#">Nicholas</a> och
+										<br>15 mer gillade detta
+									</div>
+
+
+									<div class="comments-shared">
+										<a href="#" class="post-add-icon inline-items">
+											<svg class="olymp-speech-balloon-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-speech-balloon-icon"></use></svg>
+											<span>6</span>
+										</a>
+
+										<a href="#" class="post-add-icon inline-items">
+											<svg class="olymp-share-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-share-icon"></use></svg>
+											<span>8</span>
+										</a>
+									</div>
+
+
+								</div>
+
+								<div class="control-block-button post-control-button">
+
+									<a href="#" class="btn btn-control">
+										<svg class="olymp-like-post-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-like-post-icon"></use></svg>
+									</a>
+
+									<a href="#" class="btn btn-control">
+										<svg class="olymp-comments-post-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-comments-post-icon"></use></svg>
+									</a>
+
+									<a href="#" class="btn btn-control">
+										<svg class="olymp-share-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-share-icon"></use></svg>
+									</a>
+
+								</div>
+
+							</article>
+
+							<!-- ... end Post -->
+
+							<!-- Comment Form  -->
+
+							<form class="comment-form inline-items">
+
+								<div class="post__author author vcard inline-items">
+									<img src="img/author-page.jpg" alt="author">
+
+									<div class="form-group with-icon-right ">
+										<textarea class="form-control" placeholder=""></textarea>
+										<div class="add-options-message">
+											<a href="#" class="options-message" data-toggle="modal" data-target="#update-header-photo">
+												<svg class="olymp-camera-icon">
+													<use xlink:href="svg-icons/sprites/icons.svg#olymp-camera-icon"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<button class="btn btn-md-2 btn-primary">Publicera kommentar</button>
+
+							</form>
+
+							<!-- ... end Comment Form  -->
+						</div>
+
+						<div class="ui-block">
+
+
+							<!-- Post -->
+
+							<article class="hentry post has-post-thumbnail thumb-full-width">
+
+								<div class="post__author author vcard inline-items">
+									<img src="img/avatar4.jpg" alt="author">
+
+									<div class="author-date">
+										<a class="h6 post__author-name fn" href="02-ProfilePage.html">Erik Johanson</a> skrev blogg inlägg
 										<div class="post__date">
 											<time class="published" datetime="2017-03-24T18:18">
 												3 timmar sedan
@@ -16111,8 +16439,7 @@
 						<img src="img/author-page.jpg" alt="author">
 
 						<div class="author-date">
-							<a class="h6 post__author-name fn" href="#">James Spiegel</a> skrev
-							<a href="#">blogg inlägg</a>
+							<a class="h6 post__author-name fn" href="#">James Spiegel</a> skrev blogg inlägg
 							<div class="post__date">
 								<time class="published" datetime="2017-03-24T18:18">
 									12 timmaer sedan
