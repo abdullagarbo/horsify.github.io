@@ -1,6 +1,7 @@
 
 function hide() {
-    $("#main_header, #main_section, #followers_section, #bild_gallery, #video_gallery, #mykonto, #aboutme").addClass("hide");
+    $("#main_section").hide();
+    $("#main_header, #followers_section, #bild_gallery, #video_gallery, #mykonto, #aboutme").addClass("hide");
     $("#pers_info, #konto_inst, #change_pass, #hobby_intress, #notifikatin, #blogg_request").addClass("hide");
     $("#blogg_section, #blogg_header, #blogg_post, #find_blogg, #blogg_follow, #service_page, #foto_gallery, #shopping_page, #calendar_section").addClass("hide");
     $("#horse_kat, #rytt_kat, #stall_kat, #foder_kat, #trans_kat, #service_kat, #prod_kat, #hagar_kat, #vagnar_kat, #sadlar_kat, #tillb_kat").addClass("hide");
@@ -12,7 +13,7 @@ function hide() {
 
 function show_main_section() {
     hide(); $("#main_header").removeClass("hide");
-    $("#main_section").removeClass("hide");
+    $("#main_section").show();
     $("#timeline").addClass("active");
     $("#follows").removeClass("active");
     $("#bildr").removeClass("active");
