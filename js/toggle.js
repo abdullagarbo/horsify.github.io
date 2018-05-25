@@ -1,11 +1,19 @@
+
 function hide() {
-    $("#main_section, #followers_section, #bild_gallery, #video_gallery, #mykonto, #aboutme").hide();
+    $("#main_header, #main_section, #followers_section, #bild_gallery, #video_gallery, #mykonto, #aboutme").addClass("hide");
+    $("#pers_info, #konto_inst, #change_pass, #hobby_intress, #notifikatin, #blogg_request").addClass("hide");
+    $("#blogg_section, #blogg_header, #blogg_post, #find_blogg, #blogg_follow, #service_page, #foto_gallery, #shopping_page, #calendar_section").addClass("hide");
+    $("#horse_kat, #rytt_kat, #stall_kat, #foder_kat, #trans_kat, #service_kat, #prod_kat, #hagar_kat, #vagnar_kat, #sadlar_kat, #tillb_kat").addClass("hide");
+    $("#transs_kat, #alla_kat").addClass("hide");
+    $("#horse_header, #horse_header_sub, #myhorses, #reg_horse, #find_horse, #horse_forening, #horse_forum").addClass("hide");
+    $("#horse_tidning, #horse_faqs, #horse_wiki").addClass("hide");
+    $("#horse_info, #horse_galleri, #horse_journal, #training_journal, #tavling_jornal, #horsekontakt, #horseedit").addClass("hide");
 }
 
 function show_main_section() {
-    hide(); $("#main_section").show();
+    hide(); $("#main_header").removeClass("hide");
+    $("#main_section").removeClass("hide");
     $("#timeline").addClass("active");
-    $("#blogg").removeClass("active");
     $("#follows").removeClass("active");
     $("#bildr").removeClass("active");
     $("#videor").removeClass("active");
@@ -14,11 +22,10 @@ function show_main_section() {
 }
 
 function show_followers_section() {
-    hide(); $("#followers_section").removeClass("hide");
-    $("#followers_section").show();
+    hide(); $("#main_header").removeClass("hide");
+    $("#followers_section").removeClass("hide");
     $("#follows").addClass("active");
     $("#timeline").removeClass("active");
-    $("#blogg").removeClass("active");
     $("#bildr").removeClass("active");
     $("#videor").removeClass("active");
     $("#mittkonto").removeClass("active");
@@ -26,83 +33,88 @@ function show_followers_section() {
 }   
 
 function show_bilder_section() {
-    hide(); $("#bild_gallery").removeClass("hide");
-    $("#bild_gallery").show();
+    hide(); $("#main_header").removeClass("hide");
+    $("#bild_gallery").removeClass("hide");
     $("#bildr").addClass("active");
     $("#videor").removeClass("active");
     $("#follows").removeClass("active");
     $("#timeline").removeClass("active");
-    $("#blogg").removeClass("active");
     $("#mittkonto").removeClass("active");
     $("#about").removeClass("active");
 }
 
 function show_video_section() {
-    hide(); $("#video_gallery").removeClass("hide");
-    $("#video_gallery").show();
+    hide(); $("#main_header").removeClass("hide");
+    $("#video_gallery").removeClass("hide");
     $("#videor").addClass("active");
     $("#bildr").removeClass("active");
     $("#follows").removeClass("active");
     $("#timeline").removeClass("active");
-    $("#blogg").removeClass("active");
     $("#mittkonto").removeClass("active");
     $("#about").removeClass("active");
 }   
 
 
-function hyde() {
-    $("#pers_info, #konto_inst, #change_pass, #hobby_intress, #notifikatin, #blogg_request").hide();
-}
-
 function show_myaccount_section() {
-    show_profile_page(); hide_prod_kat();
-    hide(); hyde(); hyyyde(); $("#mykonto").show(); 
-    $("#pers_info").show();
-    $("#per-info").removeClass("h7 title");
-    $("#per-info").addClass("h6 title");                
+    hide(); $("#main_header").removeClass("hide");
+    $("#mykonto").removeClass("hide"); 
+    $("#pers_info").removeClass("hide");
+    $("#mittkonto").addClass("active");
+    $("#bildr").removeClass("active");
+    $("#follows").removeClass("active");
+    $("#timeline").removeClass("active");
+    $("#videor").removeClass("active");
+    $("#about").removeClass("active");
 
+    $("#per-info").removeClass("h7 title");
+    $("#per-info").addClass("h6 title");
     $("#kon-inst").removeClass("h6 title");
     $("#kon-inst").addClass("h7 title");
-
     $("#chang-pass").removeClass("h6 title");
     $("#chang-pass").addClass("h7 title");
-
     $("#intresse").removeClass("h6 title");
     $("#intresse").addClass("h7 title");
-
     $("#nottifik").removeClass("h6 title");
     $("#nottifik").addClass("h7 title");
-
     $("#blogg-req").removeClass("h6 title");
     $("#blogg-req").addClass("h7 title");
 }
 
 function show_pers_info() {
-    show_profile_page();
-    hide(); hyde(); $("#mykonto").show(); 
-    $("#pers_info").show();
-    $("#per-info").removeClass("h7 title");
-    $("#per-info").addClass("h6 title");                
+    hide(); $("#main_header").removeClass("hide");
+    $("#mykonto").removeClass("hide");
+    $("#pers_info").removeClass("hide"); 
+    $("#mittkonto").addClass("active");
+    $("#bildr").removeClass("active");
+    $("#follows").removeClass("active");
+    $("#timeline").removeClass("active");
+    $("#videor").removeClass("active");
+    $("#about").removeClass("active");
 
+    $("#per-info").removeClass("h7 title");
+    $("#per-info").addClass("h6 title");
     $("#kon-inst").removeClass("h6 title");
     $("#kon-inst").addClass("h7 title");
-
     $("#chang-pass").removeClass("h6 title");
     $("#chang-pass").addClass("h7 title");
-
     $("#intresse").removeClass("h6 title");
     $("#intresse").addClass("h7 title");
-
     $("#nottifik").removeClass("h6 title");
     $("#nottifik").addClass("h7 title");
-
     $("#blogg-req").removeClass("h6 title");
     $("#blogg-req").addClass("h7 title");           
 }
 
 function show_aboutme() {
-    show_profile_page(); hide_prod_kat();
-    hide(); hyde(); hyyyde(); $("#aboutme").show();
+    hide(); $("#main_header").removeClass("hide");
+    $("#aboutme").removeClass("hide"); 
+    $("#mittkonto").addClass("active");
+    $("#bildr").removeClass("active");
+    $("#follows").removeClass("active");
+    $("#timeline").removeClass("active");
+    $("#videor").removeClass("active");
+    $("#about").removeClass("active");
+
     $("#about").addClass("active");
     $("#mittkonto").removeClass("active");
     $("#follows").removeClass("active");
@@ -113,251 +125,174 @@ function show_aboutme() {
 }
 
 function show_konto_inst() {
-    show_profile_page(); hide_prod_kat();
-    hide(); hyde(); hyyyde(); $("#mykonto").show(); 
-    $("#konto_inst").show();
-    $("#kon-inst").removeClass("h7 title");
-    $("#kon-inst").addClass("h6 title");                
+    hide(); $("#main_header").removeClass("hide");
+    $("#mykonto").removeClass("hide"); 
+    $("#konto_inst").removeClass("hide");
+    $("#mittkonto").addClass("active");
+    $("#bildr").removeClass("active");
+    $("#follows").removeClass("active");
+    $("#timeline").removeClass("active");
+    $("#blogg").removeClass("active");
+    $("#videor").removeClass("active");
+    $("#about").removeClass("active");
 
+    $("#kon-inst").removeClass("h7 title");
+    $("#kon-inst").addClass("h6 title");
     $("#per-info").removeClass("h6 title");
     $("#per-info").addClass("h7 title");
-
     $("#chang-pass").removeClass("h6 title");
     $("#chang-pass").addClass("h7 title");
-
     $("#intresse").removeClass("h6 title");
     $("#intresse").addClass("h7 title");
-
     $("#nottifik").removeClass("h6 title");
     $("#nottifik").addClass("h7 title");
-
     $("#blogg-req").removeClass("h6 title");
     $("#blogg-req").addClass("h7 title");
 }
 
 function show_change_pass() {
-    hyde(); $("#change_pass").show();
-    $("#chang-pass").removeClass("h7 title");
-    $("#chang-pass").addClass("h6 title");              
+    hide(); $("#main_header").removeClass("hide");
+    $("#mykonto").removeClass("hide");
+    $("#change_pass").removeClass("hide");
+    $("#mittkonto").addClass("active");
+    $("#bildr").removeClass("active");
+    $("#follows").removeClass("active");
+    $("#timeline").removeClass("active");
+    $("#blogg").removeClass("active");
+    $("#videor").removeClass("active");
+    $("#about").removeClass("active");
 
+    $("#chang-pass").removeClass("h7 title");
+    $("#chang-pass").addClass("h6 title");
     $("#per-info").removeClass("h6 title");
     $("#per-info").addClass("h7 title");
-
     $("#kon-inst").removeClass("h6 title");
     $("#kon-inst").addClass("h7 title");
-
     $("#intresse").removeClass("h6 title");
     $("#intresse").addClass("h7 title");
-
     $("#nottifik").removeClass("h6 title");
     $("#nottifik").addClass("h7 title");
-
     $("#blogg-req").removeClass("h6 title");
     $("#blogg-req").addClass("h7 title");
 }
 
 function show_intresse() {
-    hyde(); $("#hobby_intress").show();
+    hide(); $("#main_header").removeClass("hide");
+    $("#mykonto").removeClass("hide");    
+    $("#hobby_intress").removeClass("hide");
+    $("#mittkonto").addClass("active");
+    $("#bildr").removeClass("active");
+    $("#follows").removeClass("active");
+    $("#timeline").removeClass("active");
+    $("#blogg").removeClass("active");
+    $("#videor").removeClass("active");
+    $("#about").removeClass("active");
+
     $("#intresse").removeClass("h7 title");
     $("#intresse").addClass("h6 title");
-
     $("#chang-pass").removeClass("h6 title");
-    $("#chang-pass").addClass("h7 title");              
-
+    $("#chang-pass").addClass("h7 title");
     $("#per-info").removeClass("h6 title");
     $("#per-info").addClass("h7 title");
-
     $("#kon-inst").removeClass("h6 title");
     $("#kon-inst").addClass("h7 title");
-
     $("#nottifik").removeClass("h6 title");
     $("#nottifik").addClass("h7 title");
-
     $("#blogg-req").removeClass("h6 title");
     $("#blogg-req").addClass("h7 title");
 }
 
 function show_notifikation() {
-    hyde(); $("#notifikatin").show();
+    hide(); $("#main_header").removeClass("hide");
+    $("#mykonto").removeClass("hide");
+    $("#notifikatin").removeClass("hide");
+    $("#mittkonto").addClass("active");
+    $("#bildr").removeClass("active");
+    $("#follows").removeClass("active");
+    $("#timeline").removeClass("active");
+    $("#blogg").removeClass("active");
+    $("#videor").removeClass("active");
+    $("#about").removeClass("active");    
+    
     $("#nottifik").removeClass("h7 title");
     $("#nottifik").addClass("h6 title");
-
     $("#intresse").removeClass("h6 title");
     $("#intresse").addClass("h7 title");
-
     $("#chang-pass").removeClass("h6 title");
-    $("#chang-pass").addClass("h7 title");              
-
+    $("#chang-pass").addClass("h7 title");
     $("#per-info").removeClass("h6 title");
     $("#per-info").addClass("h7 title");
-
     $("#kon-inst").removeClass("h6 title");
     $("#kon-inst").addClass("h7 title");
-
     $("#blogg-req").removeClass("h6 title");
     $("#blogg-req").addClass("h7 title");
 }
 
 function show_blogg_req() {
-    hyde(); $("#blogg_request").show();
+    hide(); $("#main_header").removeClass("hide");
+    $("#mykonto").removeClass("hide");
+    $("#blogg_request").removeClass("hide");
+    $("#mittkonto").addClass("active");
+    $("#bildr").removeClass("active");
+    $("#follows").removeClass("active");
+    $("#timeline").removeClass("active");
+    $("#blogg").removeClass("active");
+    $("#videor").removeClass("active");
+    $("#about").removeClass("active"); 
+
     $("#blogg-req").removeClass("h7 title");
     $("#blogg-req").addClass("h6 title");
-
     $("#nottifik").removeClass("h6 title");
     $("#nottifik").addClass("h7 title");
-
     $("#intresse").removeClass("h6 title");
     $("#intresse").addClass("h7 title");
-
     $("#chang-pass").removeClass("h6 title");
-    $("#chang-pass").addClass("h7 title");              
-
+    $("#chang-pass").addClass("h7 title");
     $("#per-info").removeClass("h6 title");
     $("#per-info").addClass("h7 title");
-
     $("#kon-inst").removeClass("h6 title");
     $("#kon-inst").addClass("h7 title");
 }
 
-function hyyde() {
-    $("#profile_page, #blogg_section, #horse_section, #service_page, #foto_gallery, #horse_profile, #shopping_page, #calendar_section").hide();
-}
-
 function show_blogg(){
-	hyyde(); hide_prod_kat();
+	hide(); $("#blogg_header").removeClass("hide");
     $("#blogg_section").removeClass("hide");
-	$("#blogg_section").show();
+    $("#blogHem").addClass("active");
+    $("#blogPost").removeClass("active");
+    $("#blogFind").removeClass("active");
+    $("#blogFollw").removeClass("active");
 }
 
-function show_foto_section(){
-    hyyde(); hide_prod_kat();
-    $("#foto_gallery").removeClass("hide");
-    $("#foto_gallery").show();
+function show_blogg_post(){
+    hide(); $("#blogg_header").removeClass("hide");
+    $("#blogg_post").removeClass("hide");
+    $("#blogPost").addClass("active");
+    $("#blogHem").removeClass("active");
+    $("#blogFind").removeClass("active");
+    $("#blogFollw").removeClass("active");
+}
+
+function show_find_blogg(){
+    hide(); $("#blogg_header").removeClass("hide");
+    $("#find_blogg").removeClass("hide");
+    $("#blogFind").addClass("active");
+    $("#blogPost").removeClass("active");
+    $("#blogHem").removeClass("active");
+    $("#blogFollw").removeClass("active");
+}
+
+function show_blogg_follow(){
+    hide(); $("#blogg_header").removeClass("hide");
+    $("#blogg_follow").removeClass("hide");
+    $("#blogFollw").addClass("active");
+    $("#blogFind").removeClass("active");
+    $("#blogPost").removeClass("active");
+    $("#blogHem").removeClass("active");
 }
 
 function show_horses(){
-    hyyde(); hide_prod_kat();
-    $("#horse_section").removeClass("hide");
-    $("#horse_section").show();
-    show_my_horses();
-}
-
-function show_profile_page(){
-    hyyde(); hide_prod_kat();
-    $("#profile_page").show();
-    show_main_section();
-}
-
-function show_services(){
-    hyyde(); hide_prod_kat();
-    $("#service_page").removeClass("hide");
-    $("#service_page").show();
-}
-
-function show_shopping_page(){
-    hyyde(); $("#shopping_page").removeClass("hide");
-    hide_prod_kat();
-    $("#shopping_page").show();
-}
-
-function show_calendar_section(){	
-    hyyde(); hide_prod_kat();
-    $("#calendar_section").removeClass("hide");
-    $("#calendar_section").show();
-}
-
-function hide_prod_kat(){
-   $("#shopping_page, #horse_kat, #rytt_kat, #stall_kat, #foder_kat, #trans_kat, #service_kat, #prod_kat, #hagar_kat, #vagnar_kat, #sadlar_kat, #tillb_kat").hide();
-   $("#shopping_page, #transs_kat, #alla_kat").hide(); 
-}
-
-function show_horse_kat(){
-    hide_prod_kat();
-    $("#horse_kat").removeClass("hide");
-    $("#horse_kat").show();
-}
-
-function show_rytt_kat(){
-    hide_prod_kat();
-    $("#rytt_kat").removeClass("hide");
-    $("#rytt_kat").show();
-}
-
-function show_stall_kat(){
-    hide_prod_kat();
-    $("#stall_kat").removeClass("hide");
-    $("#stall_kat").show();
-}
-
-function show_foder_kat(){
-    hide_prod_kat();
-    $("#foder_kat").removeClass("hide");
-    $("#foder_kat").show();
-}
-
-function show_trans_kat(){
-    hide_prod_kat();
-    $("#trans_kat").removeClass("hide");
-    $("#trans_kat").show();
-}
-
-function show_service_kat(){
-    hide_prod_kat();
-    $("#service_kat").removeClass("hide");
-    $("#service_kat").show();
-}
-
-function show_prod_kat(){
-    hide_prod_kat();
-    $("#prod_kat").removeClass("hide");
-    $("#prod_kat").show();
-}
-
-function show_hagar_kat(){
-    hide_prod_kat();
-    $("#hagar_kat").removeClass("hide");
-    $("#hagar_kat").show();
-}
-
-function show_vagnar_kat(){
-    hide_prod_kat();
-    $("#vagnar_kat").removeClass("hide");
-    $("#vagnar_kat").show();
-}
-
-function show_sadlar_kat(){
-    hide_prod_kat();
-    $("#sadlar_kat").removeClass("hide");
-    $("#sadlar_kat").show();
-}
-
-function show_tillb_kat(){
-    hide_prod_kat();
-    $("#tillb_kat").removeClass("hide");
-    $("#tillb_kat").show();
-}
-
-function show_transs_kat(){
-    hide_prod_kat();
-    $("#transs_kat").removeClass("hide");
-    $("#transs_kat").show();
-}
-
-function show_alla_kat(){
-    hide_prod_kat();
-    $("#alla_kat").removeClass("hide");
-    $("#alla_kat").show();
-}
-
-
-function hyyyde() {
-    $("#myhorses, #reg_horse, #find_horse, #horse_forening, #horse_forum").hide();
-    $("#horse_tidning, #horse_faqs, #horse_wiki, #horse_profile").hide();
-    $("#horse_galleri, #horse_journal, #training_journal, #tavling_jornal").hide();
-}
-
-function show_my_horses() {
-    hyyyde(); $("#myhorses").show();
+    hide(); $("#horse_header").removeClass("hide");
+    $("#myhorses").removeClass("hide");
     $("#minahorses").addClass("active");
     $("#addhorse").removeClass("active");
     $("#sokhorse").removeClass("active");
@@ -366,16 +301,11 @@ function show_my_horses() {
     $("#tidning").removeClass("active");
     $("#wiki").removeClass("active");
     $("#faqs").removeClass("active");
-
-    $("#trainingjornal").removeClass("active");
-    $("#hastjornal").removeClass("active");
-    $("#hastinfo").removeClass("active");
-    $("#hastbild").removeClass("active");
-    $("#tavlingjornal").removeClass("active");  
 }
 
 function show_add_horse() {
-    hyyyde(); $("#reg_horse").show();
+    hide(); $("#horse_header").removeClass("hide");
+    $("#reg_horse").removeClass("hide");
     $("#addhorse").addClass("active");
     $("#minahorses").removeClass("active");
     $("#sokhorse").removeClass("active");
@@ -383,17 +313,12 @@ function show_add_horse() {
     $("#forum").removeClass("active");
     $("#tidning").removeClass("active");
     $("#wiki").removeClass("active");
-    $("#faqs").removeClass("active");
-
-    $("#trainingjornal").removeClass("active");
-    $("#hastjornal").removeClass("active");
-    $("#hastinfo").removeClass("active");
-    $("#hastbild").removeClass("active");
-    $("#tavlingjornal").removeClass("active");  
+    $("#faqs").removeClass("active"); 
 }
 
 function show_find_horse() {
-    hyyyde(); $("#find_horse").show();
+    hide(); $("#horse_header").removeClass("hide");
+    $("#find_horse").removeClass("hide");
     $("#sokhorse").addClass("active");
     $("#addhorse").removeClass("active");
     $("#minahorses").removeClass("active");
@@ -401,17 +326,12 @@ function show_find_horse() {
     $("#forum").removeClass("active");
     $("#tidning").removeClass("active");
     $("#wiki").removeClass("active");
-    $("#faqs").removeClass("active");
-
-    $("#trainingjornal").removeClass("active");
-    $("#hastjornal").removeClass("active");
-    $("#hastinfo").removeClass("active");
-    $("#hastbild").removeClass("active");
-    $("#tavlingjornal").removeClass("active");              
+    $("#faqs").removeClass("active");             
 }
 
 function show_horse_forening() {
-    hyyyde(); $("#horse_forening").show();
+    hide(); $("#horse_header").removeClass("hide");
+    $("#horse_forening").removeClass("hide");
     $("#forening").addClass("active");
     $("#forum").removeClass("active");
     $("#tidning").removeClass("active");
@@ -419,17 +339,12 @@ function show_horse_forening() {
     $("#faqs").removeClass("active");
     $("#sokhorse").removeClass("active");
     $("#addhorse").removeClass("active");
-    $("#minahorses").removeClass("active"); 
-
-    $("#trainingjornal").removeClass("active");
-    $("#hastjornal").removeClass("active");
-    $("#hastinfo").removeClass("active");
-    $("#hastbild").removeClass("active");
-    $("#tavlingjornal").removeClass("active");          
+    $("#minahorses").removeClass("active");          
 }
 
 function show_horse_forum() {
-    hyyyde(); $("#horse_forum").show();
+    hide(); $("#horse_header").removeClass("hide");
+    $("#horse_forum").removeClass("hide");
     $("#forum").addClass("active");
     $("#forening").removeClass("active");
     $("#tidning").removeClass("active");
@@ -437,17 +352,12 @@ function show_horse_forum() {
     $("#faqs").removeClass("active");
     $("#sokhorse").removeClass("active");
     $("#addhorse").removeClass("active");
-    $("#minahorses").removeClass("active");
-
-    $("#trainingjornal").removeClass("active");
-    $("#hastjornal").removeClass("active");
-    $("#hastinfo").removeClass("active");
-    $("#hastbild").removeClass("active");
-    $("#tavlingjornal").removeClass("active");              
+    $("#minahorses").removeClass("active");            
 }
 
 function show_horse_tidning() {
-    hyyyde(); $("#horse_tidning").show();
+    hide(); $("#horse_header").removeClass("hide");
+    $("#horse_tidning").removeClass("hide");
     $("#tidning").addClass("active");
     $("#forum").removeClass("active");
     $("#forening").removeClass("active");
@@ -455,17 +365,12 @@ function show_horse_tidning() {
     $("#faqs").removeClass("active");
     $("#sokhorse").removeClass("active");
     $("#addhorse").removeClass("active");
-    $("#minahorses").removeClass("active");
-
-    $("#trainingjornal").removeClass("active");
-    $("#hastjornal").removeClass("active");
-    $("#hastinfo").removeClass("active");
-    $("#hastbild").removeClass("active");
-    $("#tavlingjornal").removeClass("active");              
+    $("#minahorses").removeClass("active");            
 }
 
 function show_horse_forening() {
-    hyyyde(); $("#horse_forening").show();
+    hide(); $("#horse_header").removeClass("hide");
+    $("#horse_forening").removeClass("hide");
     $("#forening").addClass("active");
     $("#forum").removeClass("active");
     $("#tidning").removeClass("active");
@@ -473,17 +378,12 @@ function show_horse_forening() {
     $("#faqs").removeClass("active");
     $("#sokhorse").removeClass("active");
     $("#addhorse").removeClass("active");
-    $("#minahorses").removeClass("active");
-
-    $("#trainingjornal").removeClass("active");
-    $("#hastjornal").removeClass("active");
-    $("#hastinfo").removeClass("active");
-    $("#hastbild").removeClass("active");
-    $("#tavlingjornal").removeClass("active");              
+    $("#minahorses").removeClass("active");            
 }
 
 function show_horse_faqs() {
-    hyyyde(); $("#horse_faqs").show();
+    hide(); $("#horse_header").removeClass("hide");
+    $("#horse_faqs").removeClass("hide");
     $("#faqs").addClass("active");
     $("#forening").removeClass("active");
     $("#forum").removeClass("active");
@@ -491,17 +391,12 @@ function show_horse_faqs() {
     $("#wiki").removeClass("active");
     $("#sokhorse").removeClass("active");
     $("#addhorse").removeClass("active");
-    $("#minahorses").removeClass("active");
-
-    $("#trainingjornal").removeClass("active");
-    $("#hastjornal").removeClass("active");
-    $("#hastinfo").removeClass("active");
-    $("#hastbild").removeClass("active");
-    $("#tavlingjornal").removeClass("active");              
+    $("#minahorses").removeClass("active");              
 }
 
 function show_horse_wiki() {
-    hyyyde(); $("#horse_wiki").show();
+    hide(); $("#horse_header").removeClass("hide");
+    $("#horse_wiki").removeClass("hide");
     $("#wiki").addClass("active");
     $("#forum").removeClass("active");
     $("#tidning").removeClass("active");
@@ -509,32 +404,12 @@ function show_horse_wiki() {
     $("#faqs").removeClass("active");
     $("#sokhorse").removeClass("active");
     $("#addhorse").removeClass("active");
-    $("#minahorses").removeClass("active");
-
-    $("#trainingjornal").removeClass("active");
-    $("#hastjornal").removeClass("active");
-    $("#hastinfo").removeClass("active");
-    $("#hastbild").removeClass("active");
-    $("#tavlingjornal").removeClass("active");              
+    $("#minahorses").removeClass("active");             
 }
-
-
 
 function show_horse_profile(){
-    hyyyde();  $("#horse_profile").removeClass("hide");
-    $("#horse_profile").show();
-    show_horse_info();
-
-}           
-
-
-
-function hyyyyde(){
-    $("#horse_info, #horse_galleri, #horse_journal, #training_journal, #tavling_jornal, #horsekontakt, #horseedit").hide();                                 
-}
-
-function show_horse_info(){
-    hyyyyde(); $("#horse_info").show();
+    hide(); $("#horse_header_sub").removeClass("hide");
+    $("#horse_info").removeClass("hide");
     $("#hastinfo").addClass("active");
     $("#edithorse").removeClass("active");
     $("#trainare").removeClass("active");
@@ -542,10 +417,12 @@ function show_horse_info(){
     $("#hastjornal").removeClass("active");
     $("#trainingjornal").removeClass("active");
     $("#tavlingjornal").removeClass("active");
+
 }
 
 function show_horse_galleri(){
-    hyyyyde(); $("#horse_galleri").show();
+    hide(); $("#horse_header_sub").removeClass("hide");
+    $("#horse_galleri").removeClass("hide");
     $("#hastbild").addClass("active");
     $("#edithorse").removeClass("active");
     $("#trainare").removeClass("active");
@@ -556,7 +433,8 @@ function show_horse_galleri(){
 }
 
 function show_horse_journal(){
-    hyyyyde(); $("#horse_journal").show();
+    hide(); $("#horse_header_sub").removeClass("hide");
+    $("#horse_journal").removeClass("hide");
     $("#hastjornal").addClass("active");
     $("#edithorse").removeClass("active");
     $("#trainare").removeClass("active");
@@ -567,7 +445,8 @@ function show_horse_journal(){
 }
 
 function show_training_journal(){
-    hyyyyde(); $("#training_journal").show();
+    hide(); $("#horse_header_sub").removeClass("hide");
+    $("#training_journal").removeClass("hide");
     $("#trainingjornal").addClass("active");
     $("#edithorse").removeClass("active");
     $("#trainare").removeClass("active");
@@ -578,7 +457,8 @@ function show_training_journal(){
 }
 
 function show_tavling_journal(){
-    hyyyyde(); $("#tavling_jornal").show();
+    hide(); $("#horse_header_sub").removeClass("hide");
+    $("#tavling_jornal").removeClass("hide");
     $("#tavlingjornal").addClass("active");
     $("#edithorse").removeClass("active");
     $("#trainare").removeClass("active");
@@ -589,7 +469,8 @@ function show_tavling_journal(){
 }
 
 function show_horsekontakt(){
-    hyyyyde(); $("#horsekontakt").show();
+    hide(); $("#horse_header_sub").removeClass("hide");
+    $("#horsekontakt").removeClass("hide");
     $("#trainare").addClass("active");
     $("#edithorse").removeClass("active");
     $("#tavlingjornal").removeClass("active");
@@ -600,7 +481,8 @@ function show_horsekontakt(){
 }
 
 function show_edit_horse_profile(){
-    hyyyyde(); $("#horseedit").show();          
+    hide(); $("#horse_header_sub").removeClass("hide");
+    $("#horseedit").removeClass("hide");         
     $("#edithorse").addClass("active");
     $("#trainare").removeClass("active");
     $("#tavlingjornal").removeClass("active");
@@ -610,3 +492,87 @@ function show_edit_horse_profile(){
     $("#hastbild").removeClass("active");
 }
 
+function show_services(){
+    hide();
+    $("#service_page").removeClass("hide");
+}
+
+function show_shopping_page(){
+    hide(); 
+    $("#shopping_page").removeClass("hide");
+}
+
+function show_foto_section(){
+    hide();
+    $("#foto_gallery").removeClass("hide");
+}
+
+function show_calendar_section(){	
+    hide();
+    $("#calendar_section").removeClass("hide");
+}
+
+function show_horse_kat(){
+    hide();
+    $("#horse_kat").removeClass("hide");
+}
+
+function show_rytt_kat(){
+    hide();
+    $("#rytt_kat").removeClass("hide");
+}
+
+function show_stall_kat(){
+    hide();
+    $("#stall_kat").removeClass("hide");
+}
+
+function show_foder_kat(){
+    hide();
+    $("#foder_kat").removeClass("hide");
+}
+
+function show_trans_kat(){
+    hide();
+    $("#trans_kat").removeClass("hide");
+}
+
+function show_service_kat(){
+    hide();
+    $("#service_kat").removeClass("hide");
+}
+
+function show_prod_kat(){
+    hide();
+    $("#prod_kat").removeClass("hide");
+}
+
+function show_hagar_kat(){
+    hide();
+    $("#hagar_kat").removeClass("hide");
+}
+
+function show_vagnar_kat(){
+    hide();
+    $("#vagnar_kat").removeClass("hide");
+}
+
+function show_sadlar_kat(){
+    hide();
+    $("#sadlar_kat").removeClass("hide");
+}
+
+function show_tillb_kat(){
+    hide();
+    $("#tillb_kat").removeClass("hide");
+}
+
+function show_transs_kat(){
+    hide();
+    $("#transs_kat").removeClass("hide");
+}
+
+function show_alla_kat(){
+    hide();
+    $("#alla_kat").removeClass("hide");
+}
