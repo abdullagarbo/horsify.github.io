@@ -868,7 +868,7 @@
 			<h6>Horsify</h6>
 		</div>
 
-		<div class="header-content-wrapper">
+		<div class="header-content-wrapper">			
 			<form class="search-bar w-search notification-list friend-requests">
 				<div class="form-group with-button">
 					<input class="form-control js-user-search" placeholder="Search here people or pages..." type="text">
@@ -879,7 +879,6 @@
 			</form>
 
 			<a href="#" name="dark_light" onclick="toggleDarkLight()" class="link-find-friend">Mörk / Ljusläge</a>
-
 			<div class="control-block">
 
 				<div class="control-icon more has-items">
@@ -1668,27 +1667,45 @@
 								<div class="col col-lg-12 col-md-12 col-sm-12 col-12">
 									<ul class="profile-menu">
 										<li>
-											<a id="timeline" href="javascript:show_main_section();" class="active">Tidslinje</a>
+											<a id="timeline" href="javascript:show_main_section();" class="active">
+												<div>
+													<svg class="olymp-status-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-status-icon"></use></svg>
+												</div>
+												<span>Tidslinje</span>
+											</a>
 										</li>
 										<li>
-											<a id="follows" href="javascript:show_followers_section();">Följare</a>
+											<a id="follows" href="javascript:show_followers_section();">
+												<div>
+													<svg class="olymp-happy-face-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-happy-face-icon"></use></svg>
+												</div>
+												<span>Följare</span>
+											</a>
 										</li>
 										<li>
-											<a id="bildr" href="javascript:show_bilder_section();">Bilder</a>
+											<a id="bildr" href="javascript:show_bilder_section();">
+												<div>
+													<svg class="olymp-photos-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-photos-icon"></use></svg>
+												</div>
+												<span>Bilder</span>
+											</a>
 										</li>
 										<li>
-											<a id="videor" href="javascript:show_video_section();">Video</a>
+											<a id="videor" href="javascript:show_video_section();">
+												<div>
+													<svg class="olymp-multimedia-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-multimedia-icon"></use></svg>
+												</div>
+												<span>Video</span>
+											</a>
 										</li>
 										<li>
-											<a id="mittkonto" href="javascript:show_myaccount_section();">Mitt konto</a>
+											<a id="mittkonto" href="javascript:show_myaccount_section();">
+												<div>
+													<svg class="olymp-computer-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-computer-icon"></use></svg>
+												</div>
+												<span>Mitt konto</span>
+											</a>
 										</li>
-										<li>
-											<a id="about" href="javascript:show_aboutme();">Om mig</a>
-										</li>
-										<li>
-											<a href="#">Inbox</a>
-										</li>
-
 									</ul>
 								</div>
 							</div>
@@ -1705,7 +1722,135 @@
 
 			<!-- Main Content -->
 			<div class="col col-xl-6 order-xl-2 col-lg-12 order-lg-1 col-md-12 col-sm-12 col-xs-12">
-				<div id="newsfeed-items-grid">
+				<div id="newsfeed-items-grid">						
+								
+								<div class="ui-block">
+					
+									
+									<!-- New Post Form  -->
+									
+									<div class="news-feed-form">
+										<!-- Nav tabs -->
+										<ul class="nav nav-tabs" role="tablist">
+											<li class="nav-item">
+												<a class="nav-link active inline-items" data-toggle="tab" href="#home-1" role="tab" aria-expanded="true">
+									
+													<svg class="olymp-status-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-status-icon"></use></svg>
+									
+													<span>Status</span>
+												</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link inline-items" data-toggle="tab" href="#profile-1" role="tab" aria-expanded="false">
+									
+													<svg class="olymp-multimedia-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-multimedia-icon"></use></svg>
+									
+													<span>Multimedia</span>
+												</a>
+											</li>
+									
+											<li class="nav-item">
+												<a class="nav-link inline-items" data-toggle="tab" href="#blog" role="tab" aria-expanded="false">
+													<svg class="olymp-blog-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-blog-icon"></use></svg>
+									
+													<span>Blogg Inlägg</span>
+												</a>
+											</li>
+										</ul>
+									
+										<!-- Tab panes -->
+										<div class="tab-content">
+											<div class="tab-pane active" id="home-1" role="tabpanel" aria-expanded="true">
+												<form>
+													<div class="author-thumb">
+														<img src="img/author-page.jpg" alt="author">
+													</div>
+													<div class="form-group with-icon label-floating is-empty">
+														<label class="control-label">Dela vad du tänker här...</label>
+														<textarea class="form-control" placeholder=""></textarea>
+													</div>
+													<div class="add-options-message">
+														<a href="#" class="options-message" data-toggle="tooltip" data-placement="top"   data-original-title="ADD PHOTOS">
+															<svg class="olymp-camera-icon" data-toggle="modal" data-target="#update-header-photo"><use xlink:href="svg-icons/sprites/icons.svg#olymp-camera-icon"></use></svg>
+														</a>
+														<a href="#" class="options-message" data-toggle="tooltip" data-placement="top"   data-original-title="TAG YOUR FRIENDS">
+															<svg class="olymp-computer-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-computer-icon"></use></svg>
+														</a>
+									
+														<a href="#" class="options-message" data-toggle="tooltip" data-placement="top"   data-original-title="ADD LOCATION">
+															<svg class="olymp-small-pin-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-small-pin-icon"></use></svg>
+														</a>
+									
+														<button class="btn btn-primary btn-md-2">Dela</button>
+														<button   class="btn btn-md-2 btn-border-think btn-transparent c-grey">Visa</button>
+									
+													</div>
+									
+												</form>
+											</div>
+									
+											<div class="tab-pane" id="profile-1" role="tabpanel" aria-expanded="true">
+												<form>
+													<div class="author-thumb">
+														<img src="img/author-page.jpg" alt="author">
+													</div>
+													<div class="form-group with-icon label-floating is-empty">
+														<label class="control-label">Dela vad du tänker här...</label>
+														<textarea class="form-control" placeholder=""  ></textarea>
+													</div>
+													<div class="add-options-message">
+														<a href="#" class="options-message" data-toggle="tooltip" data-placement="top"   data-original-title="ADD PHOTOS">
+															<svg class="olymp-camera-icon" data-toggle="modal" data-target="#update-header-photo"><use xlink:href="svg-icons/sprites/icons.svg#olymp-camera-icon"></use></svg>
+														</a>
+														<a href="#" class="options-message" data-toggle="tooltip" data-placement="top"   data-original-title="TAG YOUR FRIENDS">
+															<svg class="olymp-computer-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-computer-icon"></use></svg>
+														</a>
+									
+														<a href="#" class="options-message" data-toggle="tooltip" data-placement="top"   data-original-title="ADD LOCATION">
+															<svg class="olymp-small-pin-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-small-pin-icon"></use></svg>
+														</a>
+									
+														<button class="btn btn-primary btn-md-2">Dela</button>
+														<button   class="btn btn-md-2 btn-border-think btn-transparent c-grey">Visa</button>
+									
+													</div>
+									
+												</form>
+											</div>
+									
+											<div class="tab-pane" id="blog" role="tabpanel" aria-expanded="true">
+												<form>
+													<div class="author-thumb">
+														<img src="img/author-page.jpg" alt="author">
+													</div>
+													<div class="form-group with-icon label-floating is-empty">
+														<label class="control-label">Dela vad du tänker här...</label>
+														<textarea class="form-control" placeholder=""  ></textarea>
+													</div>
+													<div class="add-options-message">
+														<a href="#" class="options-message" data-toggle="tooltip" data-placement="top"   data-original-title="ADD PHOTOS">
+															<svg class="olymp-camera-icon" data-toggle="modal" data-target="#update-header-photo"><use xlink:href="svg-icons/sprites/icons.svg#olymp-camera-icon"></use></svg>
+														</a>
+														<a href="#" class="options-message" data-toggle="tooltip" data-placement="top"   data-original-title="TAG YOUR FRIENDS">
+															<svg class="olymp-computer-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-computer-icon"></use></svg>
+														</a>
+									
+														<a href="#" class="options-message" data-toggle="tooltip" data-placement="top"   data-original-title="ADD LOCATION">
+															<svg class="olymp-small-pin-icon"><use xlink:href="svg-icons/sprites/icons.svg#olymp-small-pin-icon"></use></svg>
+														</a>
+									
+														<button class="btn btn-primary btn-md-2">Dela</button>
+														<button   class="btn btn-md-2 btn-border-think btn-transparent c-grey">Visa</button>
+									
+													</div>
+									
+												</form>
+											</div>
+										</div>
+									</div>
+									
+									<!-- ... end News Feed Form  -->
+								</div>
 
 					<div class="ui-block">
 
@@ -7961,19 +8106,19 @@
 										<li>
 											<a id="sokhorse" href="javascript:show_find_horse();">Sök häst</a>
 										</li>
-										<li>
+										<!--<li>
 											<a id="forening" href="javascript:show_horse_forening();">Hästförening</a>
-										</li>
+										</li>-->
 									</ul>
 								</div>
 								<div class="col-lg-5 ml-auto col-md-5">
 									<ul class="profile-menu">
-										<li>
+										<!--<li>
 											<a id="forum" href="javascript:show_horse_forum();">Hästforum</a>
 										</li>
 										<li>
 											<a id="tidning" href="javascript:show_horse_tidning();">Hästtidning</a>
-										</li>
+										</li>-->
 										<li>
 											<a id="faqs" href="javascript:show_horse_faqs();">Häst FAQs</a>
 										</li>
@@ -8059,10 +8204,6 @@
 										Hästras
 									</th>
 
-									<th class="topics">
-										Reg nr
-									</th>
-
 									<th class="posts">
 										Tränare
 									</th>
@@ -8089,9 +8230,6 @@
 									</td>
 									<td class="topics">
 										<a href="#" class="h6 count">Varmblod</a>
-									</td>
-									<td class="posts">
-										<a href="#" class="h6 count">RG-13422233</a>
 									</td>
 									<td class="freshness">
 										<div class="author-freshness">
@@ -8125,9 +8263,6 @@
 									</td>
 									<td class="topics">
 										<a href="#" class="h6 count">Kallblod</a>
-									</td>
-									<td class="posts">
-										<a href="#" class="h6 count">RG-763948463</a>
 									</td>
 									<td class="freshness">
 										<div class="author-freshness">
@@ -8169,9 +8304,6 @@
 									</td>
 									<td class="topics">
 										<a href="#" class="h6 count">Varmblod</a>
-									</td>
-									<td class="posts">
-										<a href="#" class="h6 count">RG-23414134</a>
 									</td>
 									<td class="freshness">
 										<div class="author-freshness">
@@ -8246,13 +8378,13 @@
 									</div>	
 									<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 										<div class="form-group label-floating">
-											<label class="control-label">Farnamn</label>
+											<label class="control-label">Far</label>
 											<input class="form-control" placeholder="" type="text" value="">
 										</div>
 									</div>
 									<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">	
 										<div class="form-group label-floating">
-											<label class="control-label">Mornamn</label>
+											<label class="control-label">Mor</label>
 											<input class="form-control" placeholder="" type="text" value="">
 										</div>
 									</div>	
@@ -8279,7 +8411,11 @@
 											<label class="control-label">Födelseland</label>
 											<input class="form-control" placeholder="" type="text" value="">
 										</div>
-										<div class="form-group label-floating is-select">
+										<div class="form-group label-floating">
+											<label class="control-label">Tecken</label>
+											<input class="form-control" placeholder="" type="text" value="">
+										</div>
+										<!--<div class="form-group label-floating is-select">
 											<label class="control-label">Hästyrke</label>
 											<select class="selectpicker form-control" size="auto">
 												<option value="US">Vetrinär</option>
@@ -8287,7 +8423,7 @@
 												<option value="EO">Hovslagare</option>
 												<option value="EO">Tandläkare</option>
 											</select>
-										</div>
+										</div>-->
 									</div>
 
 									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -8303,19 +8439,17 @@
 											<label class="control-label">Passnummer</label>
 											<input class="form-control" placeholder="" type="text" value="">
 										</div>
-										<div class="form-group label-floating">
-											<label class="control-label">Tecken</label>
-											<input class="form-control" placeholder="" type="text" value="">
-										</div>
 									</div>
 
 									<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 										<div class="form-group label-floating is-select">
 											<label class="control-label">Färg</label>
 											<select class="selectpicker form-control" size="auto">
+												<option value="VT">Brun</option>
 												<option value="RD">Röd</option>
 												<option value="FX">Fux</option>
 												<option value="VT">Svart</option>
+												<option value="VT">Vit</option>
 											</select>
 										</div>
 									</div>
@@ -8327,12 +8461,13 @@
 												<option value="KB">B</option>
 												<option value="KC">C</option>
 												<option value="KD">D</option>
+												<option value="KD">StorHäst</option>
 											</select>
 										</div>
 									</div>
 									<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
 										<div class="form-group label-floating is-select">
-											<label class="control-label">Skön</label>
+											<label class="control-label">Kön</label>
 											<select class="selectpicker form-control" size="auto">
 												<option value="HG">Hingst</option>
 												<option value="SO">Sto</option>
@@ -8363,13 +8498,12 @@
 										</div>
 
 										<div class="form-group label-floating">
-											<label class="control-label">Höjd (cm)</label>
+											<label class="control-label">Mankhöjd (cm)</label>
 											<input class="form-control" placeholder="" type="text" value="">
 										</div>
-										<div class="row">
+										<div class="form-group label-floating">
 											<a href="#" data-toggle="modal" data-target="#update-header-photo" class="btn btn-primary btn-md-2">Lägg till bild  +</a>
 										</div>
-
 									</div>
 
 									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -8399,7 +8533,7 @@
 							<form>
 								<div class="row">
 
-									<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+									<div class="col-lg-4 col-md-2 col-sm-12 col-xs-12">
 										<div class="form-group label-floating">
 											<label class="control-label">Hästnamn</label>
 											<input class="form-control" placeholder="" type="text" value="">
@@ -8411,12 +8545,12 @@
 											<input class="form-control" placeholder="" type="text" value="">
 										</div>
 									</div>
-									<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+									<!--<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
 										<div class="form-group label-floating">
 											<label class="control-label">Chipnummer</label>
 											<input class="form-control" placeholder="" type="text" value="">
 										</div>
-									</div>
+									</div>-->
 									<div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
 										<div class="form-group label-floating is-select">
 											<label class="control-label">Skön</label>
@@ -8472,10 +8606,6 @@
 										Hästras
 									</th>
 
-									<th class="topics">
-										Reg nr
-									</th>
-
 									<th class="posts">
 										Tränare
 									</th>
@@ -8501,9 +8631,6 @@
 									</td>
 									<td class="topics">
 										<a href="#" class="h6 count">Kallblod</a>
-									</td>
-									<td class="posts">
-										<a href="#" class="h6 count">RG-763948463</a>
 									</td>
 									<td class="freshness">
 										<div class="author-freshness">
@@ -8541,9 +8668,6 @@
 									<td class="topics">
 										<a href="#" class="h6 count">Varmblod</a>
 									</td>
-									<td class="posts">
-										<a href="#" class="h6 count">RG-23414134</a>
-									</td>
 									<td class="freshness">
 										<div class="author-freshness">
 											<div class="author-thumb">
@@ -8571,9 +8695,6 @@
 									</td>
 									<td class="topics">
 										<a href="#" class="h6 count">Varmblod</a>
-									</td>
-									<td class="posts">
-										<a href="#" class="h6 count">RG-13422233</a>
 									</td>
 									<td class="freshness">
 										<div class="author-freshness">
